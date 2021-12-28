@@ -16,7 +16,7 @@ def get_categories():
         keep_col = ['Id', 'Name', 'Image file name']
         categories_df = pd_reader[keep_col]
         for index, entry in categories_df.iterrows():
-            categories[entry["Id"]] = ({"id": entry["Id"], "name": entry["Name"], "image": entry["Image file name"], "entries": []})
+            categories[entry["Id"]] = ({"id": entry["Id"], "name": entry["Name"], "image": entry["Image file name"]})
     return categories
 
 
@@ -45,33 +45,46 @@ def get_categories_entries():
 def get_entries():
     # Get all the entries and add entry ids to the category list
     print("==== Getting entries")
+    entries = {}
     # Id,Entry word,Word type,Translation,Description,Published?,Created at,Updated at,Image file name,Image content type,Image file size,Image updated at,Audio file name,Audio content type,Audio file size,Audio updated at,Extras,Display order,Sentence,Sentence translation,Scientific name,Admin only notes,Call audio file name,Call audio content type,Call audio file size,Call audio updated at,Sentence audio file name,Sentence audio content type,Sentence audio file size,Sentence audio updated at
     with Path("../content/jila-kaytetye-admin/entries.csv").open("r") as entries_file:
-        csv_reader = pd.read_csv(entries_file)
+        pd_reader = pd.read_csv(entries_file)
         keep_col = ['Id', 'Entry word', 'Translation']
-        entries = csv_reader[keep_col]
+        entries_df = pd_reader[keep_col]
+    for index, entry in entries_df.iterrows():
+        entries[entry["Id"]] = (
+        {"id": entry["Id"], "word": entry["Entry word"], "translation": entry["Translation"]})
     return entries
 
 
-def build_category_pages(categories: Dict, entries_categories: Dict, entries: pd.DataFrame, categories_output_path: Path):
+def build_category_pages(categories: Dict, entries_categories: Dict, entries: Dict, categories_output_path: Path):
     for cat_id in categories:
         print(categories[cat_id]["name"])
         cat_name = categories[cat_id]["name"].lower()
-        # build a category page with BeautifulSoup
+        # Build a category page with BeautifulSoup
         category_menu_soup = BeautifulSoup(f'<p>{categories[cat_id]["name"]} menu</p><ul></ul>', "html.parser")
         for entry_id, cat_ids in entries_categories.items():
             if cat_id in cat_ids:
                 # get the entry details
-                entry = entries.loc[(entries["Id"] == entry_id)]
-                word = entry["Entry word"].item()
+                entry = entries[entry_id]
+                word = entry["word"]
                 li_tag = category_menu_soup.new_tag("li")
-                li_a_tag = category_menu_soup.new_tag("a", href=f"{word}.html")
+                li_a_tag = category_menu_soup.new_tag("a", href=f"../entries/{word}.html")
                 li_a_tag.string = word
                 li_tag.append(li_a_tag)
                 category_menu_soup.ul.append(li_tag)
 
         with categories_output_path.joinpath(f"{cat_name}.html").open("w") as html_output_file:
             html_output_file.write(category_menu_soup.prettify())
+
+
+def build_entry_pages(entries: Dict, entries_output_path: Path):
+    for index, entry in entries.items():
+        print(entry["id"], entry["word"], entry["translation"])
+        # Build an entry page with BeautifulSoup
+        entry_soup = BeautifulSoup(f'<h1>{entry["word"]}</h1><p>{entry["translation"]}</p>', "html5lib")
+        with entries_output_path.joinpath(f'{entry["word"]}.html').open("w") as html_output_file:
+            html_output_file.write(entry_soup.prettify())
 
 
 def main():
@@ -81,14 +94,23 @@ def main():
         shutil.rmtree(categories_output_path)
     categories_output_path.mkdir(parents=True, exist_ok=True)
 
+    entries_output_path = Path("../output/entries")
+    if entries_output_path.is_dir():
+        shutil.rmtree(entries_output_path)
+    entries_output_path.mkdir(parents=True, exist_ok=True)
+
     categories = get_categories()
     categories_entries, entries_categories = get_categories_entries()
     entries = get_entries()
+
+    print(entries)
 
     build_category_pages(categories=categories,
                          entries_categories=entries_categories,
                          entries=entries,
                          categories_output_path=categories_output_path)
+
+    build_entry_pages(entries=entries, entries_output_path=entries_output_path)
 
 if __name__ == "__main__":
     main()
