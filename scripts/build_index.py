@@ -46,14 +46,46 @@ def get_entries():
     # Get all the entries and add entry ids to the category list
     print("==== Getting entries")
     entries = {}
-    # Id,Entry word,Word type,Translation,Description,Published?,Created at,Updated at,Image file name,Image content type,Image file size,Image updated at,Audio file name,Audio content type,Audio file size,Audio updated at,Extras,Display order,Sentence,Sentence translation,Scientific name,Admin only notes,Call audio file name,Call audio content type,Call audio file size,Call audio updated at,Sentence audio file name,Sentence audio content type,Sentence audio file size,Sentence audio updated at
+    # Id,
+    # Entry word,
+    # Word type,
+    # Translation,
+    # Description,
+    # Published?,
+    # Created at,
+    # Updated at,
+    # Image file name,
+    # Image content type,
+    # Image file size,
+    # Image updated at,
+    # Audio file name,
+    # Audio content type,
+    # Audio file size,
+    # Audio updated at,
+    # Extras,
+    # Display order,
+    # Sentence,
+    # Sentence translation,
+    # Scientific name,
+    # Admin only notes,
+    # Call audio file name,
+    # Call audio content type,
+    # Call audio file size,
+    # Call audio updated at,
+    # Sentence audio file name,
+    # Sentence audio content type,
+    # Sentence audio file size,
+    # Sentence audio updated at
     with Path("../content/jila-kaytetye-admin/entries.csv").open("r") as entries_file:
-        pd_reader = pd.read_csv(entries_file)
-        keep_col = ['Id', 'Entry word', 'Translation']
-        entries_df = pd_reader[keep_col]
-    for index, entry in entries_df.iterrows():
-        entries[entry["Id"]] = (
-        {"id": entry["Id"], "word": entry["Entry word"], "translation": entry["Translation"]})
+        csv_reader = csv.DictReader(entries_file)
+        # next(csv_reader) # skip the header
+        for row in csv_reader:
+            print(row)
+            entry_id = int(row["Id"])
+            word = row["Entry word"]
+            translation = row["Translation"]
+            entries[entry_id] = {"id": entry_id, "word": word, "translation": translation}
+
     return entries
 
 
@@ -79,10 +111,18 @@ def build_category_pages(categories: Dict, entries_categories: Dict, entries: Di
 
 
 def build_entry_pages(entries: Dict, entries_output_path: Path):
+    """
+Id,Entry word,Word type,Translation,Description,Published?,Created at,Updated at,Image file name,Image content type,Image file size,Image updated at,Audio file name,Audio content type,Audio file size,Audio updated at,Extras,Display order,Sentence,Sentence translation,Scientific name,Admin only notes,Call audio file name,Call audio content type,Call audio file size,Call audio updated at,Sentence audio file name,Sentence audio content type,Sentence audio file size,Sentence audio updated at
+
+    :param entries:
+    :param entries_output_path:
+    :return:
+    """
     for index, entry in entries.items():
         print(entry["id"], entry["word"], entry["translation"])
         # Build an entry page with BeautifulSoup
-        entry_soup = BeautifulSoup(f'<h1>{entry["word"]}</h1><p>{entry["translation"]}</p>', "html5lib")
+        entry_soup = BeautifulSoup(f'<div><h1>{entry["word"]}</h1><p>{entry["translation"]}</p></div>', "html5lib")
+        # insert image
         with entries_output_path.joinpath(f'{entry["word"]}.html').open("w") as html_output_file:
             html_output_file.write(entry_soup.prettify())
 
