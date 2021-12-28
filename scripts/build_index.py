@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+import shutil
 from typing import List
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -54,12 +55,16 @@ def get_entries():
 
 def main():
 
+    categories_output_path = Path("../output/categories")
+    if categories_output_path.is_dir():
+        shutil.rmtree(categories_output_path)
+    categories_output_path.mkdir(parents=True, exist_ok=True)
+
     categories = get_categories()
     categories_entries, entries_categories = get_categories_entries()
     entries = get_entries()
-    # print(entries)
 
-    for cat_id in categories_entries:
+    for cat_id in categories:
         print(categories[cat_id]["name"])
         cat_name = categories[cat_id]["name"].lower()
         # build a category page with BeautifulSoup
@@ -75,9 +80,7 @@ def main():
                 li_tag.append(li_a_tag)
                 category_menu_soup.ul.append(li_tag)
 
-        output_path = Path("../output")
-
-        with output_path.joinpath(f"{cat_name}.html").open("w") as html_output_file:
+        with categories_output_path.joinpath(f"{cat_name}.html").open("w") as html_output_file:
             html_output_file.write(category_menu_soup.prettify())
 
 
