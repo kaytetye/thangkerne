@@ -1,0 +1,15 @@
+.idea
+content/*
+media/*
+output/*
+tmp/*
+
+all_images/*
+all_audio/*
+
+# Keep the folders themselves
+
+!content/.keep
+!media/.keep
+!output/index/*
+!tmp/.keep
