@@ -62,20 +62,20 @@ def build_category_pages(categories: Dict, entries_categories: Dict, entries: Di
         print(categories[cat_id]["name"])
         cat_name = categories[cat_id]["name"].lower()
         # Build a category page with BeautifulSoup
-        category_menu_soup = BeautifulSoup(f'<p>{categories[cat_id]["name"]} menu</p><ul></ul>', "html.parser")
+        category_soup = BeautifulSoup(f'<p>{categories[cat_id]["name"]} menu</p><ul></ul>', "html.parser")
         for entry_id, cat_ids in entries_categories.items():
             if cat_id in cat_ids:
-                # get the entry details
+                # Build a link with the entry word
                 entry = entries[entry_id]
                 word = entry["word"]
-                li_tag = category_menu_soup.new_tag("li")
-                li_a_tag = category_menu_soup.new_tag("a", href=f"../entries/{word}.html")
+                li_tag = category_soup.new_tag("li")
+                li_a_tag = category_soup.new_tag("a", attrs={"href": f"../entries/{word}.html", "class": "entry-link"})
                 li_a_tag.string = word
                 li_tag.append(li_a_tag)
-                category_menu_soup.ul.append(li_tag)
+                category_soup.ul.append(li_tag)
 
         with categories_output_path.joinpath(f"{cat_name}.html").open("w") as html_output_file:
-            html_output_file.write(category_menu_soup.prettify())
+            html_output_file.write(category_soup.prettify())
 
 
 def build_entry_pages(entries: Dict, entries_output_path: Path):
