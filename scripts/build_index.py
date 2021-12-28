@@ -5,6 +5,7 @@ import shutil
 from typing import Dict, List
 from bs4 import BeautifulSoup
 import pandas as pd
+from jinja2 import Template
 
 
 def get_categories():
@@ -116,32 +117,22 @@ def build_category_pages(categories: Dict, entries_categories: Dict, entries: Di
 
 def build_entry_pages(entries: Dict, entries_output_path: Path):
     """
-Id,Entry word,Word type,Translation,Description,Published?,Created at,Updated at,Image file name,Image content type,Image file size,Image updated at,Audio file name,Audio content type,Audio file size,Audio updated at,Extras,Display order,Sentence,Sentence translation,Scientific name,Admin only notes,Call audio file name,Call audio content type,Call audio file size,Call audio updated at,Sentence audio file name,Sentence audio content type,Sentence audio file size,Sentence audio updated at
+    Id,Entry word,Word type,Translation,Description,Published?,Created at,Updated at,Image file name,Image content type,Image file size,Image updated at,Audio file name,Audio content type,Audio file size,Audio updated at,Extras,Display order,Sentence,Sentence translation,Scientific name,Admin only notes,Call audio file name,Call audio content type,Call audio file size,Call audio updated at,Sentence audio file name,Sentence audio content type,Sentence audio file size,Sentence audio updated at
 
     :param entries:
     :param entries_output_path:
     :return:
     """
+    with open("../templates/entry.html") as template_file:
+        tm = Template(template_file.read())
+
     for index, entry in entries.items():
-        print(entry["id"], entry["word"], entry["translation"])
-        # Build an entry page with BeautifulSoup
-        entry_soup = BeautifulSoup(f'<div class="entry"></div>', "html5lib")
-
-        title_tag = entry_soup.new_tag("h1", attrs={"class": "word"})
-        title_tag.string = entry["word"]
-
-        translation_tag = entry_soup.new_tag("p", attrs={"class": "translation"})
-        translation_tag.string = entry["translation"]
-
-        image_tag = entry_soup.new_tag("img", attrs={"class": "feature", "alt": entry["word"]})
-        image_tag["src"] = "test"
-
-        entry_soup.div.append(title_tag)
-        entry_soup.div.append(translation_tag)
-        entry_soup.div.append(image_tag)
-
+        html = tm.render(word=entry["word"],
+                         translation=entry["translation"],
+                         alt=entry["word"],
+                         src="test")
         with entries_output_path.joinpath(f'{entry["word"]}.html').open("w") as html_output_file:
-            html_output_file.write(entry_soup.prettify())
+            html_output_file.write(html)
 
 
 def main():
@@ -168,6 +159,7 @@ def main():
                          categories_output_path=categories_output_path)
 
     build_entry_pages(entries=entries, entries_output_path=entries_output_path)
+
 
 if __name__ == "__main__":
     main()
