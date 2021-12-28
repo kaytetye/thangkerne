@@ -2,7 +2,7 @@ import csv
 import json
 from pathlib import Path
 import shutil
-from typing import List
+from typing import Dict, List
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -53,17 +53,7 @@ def get_entries():
     return entries
 
 
-def main():
-
-    categories_output_path = Path("../output/categories")
-    if categories_output_path.is_dir():
-        shutil.rmtree(categories_output_path)
-    categories_output_path.mkdir(parents=True, exist_ok=True)
-
-    categories = get_categories()
-    categories_entries, entries_categories = get_categories_entries()
-    entries = get_entries()
-
+def build_category_pages(categories: Dict, entries_categories: Dict, entries: pd.DataFrame, categories_output_path: Path):
     for cat_id in categories:
         print(categories[cat_id]["name"])
         cat_name = categories[cat_id]["name"].lower()
@@ -83,6 +73,22 @@ def main():
         with categories_output_path.joinpath(f"{cat_name}.html").open("w") as html_output_file:
             html_output_file.write(category_menu_soup.prettify())
 
+
+def main():
+
+    categories_output_path = Path("../output/categories")
+    if categories_output_path.is_dir():
+        shutil.rmtree(categories_output_path)
+    categories_output_path.mkdir(parents=True, exist_ok=True)
+
+    categories = get_categories()
+    categories_entries, entries_categories = get_categories_entries()
+    entries = get_entries()
+
+    build_category_pages(categories=categories,
+                         entries_categories=entries_categories,
+                         entries=entries,
+                         categories_output_path=categories_output_path)
 
 if __name__ == "__main__":
     main()
