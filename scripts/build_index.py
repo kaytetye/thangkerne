@@ -84,8 +84,12 @@ def get_entries():
             entry_id = int(row["Id"])
             word = row["Entry word"]
             translation = row["Translation"]
-            entries[entry_id] = {"id": entry_id, "word": word, "translation": translation}
-
+            image_file_name = row["Image file name"]
+            entries[entry_id] = {"id": entry_id,
+                                 "word": word,
+                                 "translation": translation,
+                                 "image_file_name": image_file_name
+                                 }
     return entries
 
 
@@ -121,8 +125,21 @@ Id,Entry word,Word type,Translation,Description,Published?,Created at,Updated at
     for index, entry in entries.items():
         print(entry["id"], entry["word"], entry["translation"])
         # Build an entry page with BeautifulSoup
-        entry_soup = BeautifulSoup(f'<div><h1>{entry["word"]}</h1><p>{entry["translation"]}</p></div>', "html5lib")
-        # insert image
+        entry_soup = BeautifulSoup(f'<div class="entry"></div>', "html5lib")
+
+        title_tag = entry_soup.new_tag("h1", attrs={"class": "word"})
+        title_tag.string = entry["word"]
+
+        translation_tag = entry_soup.new_tag("p", attrs={"class": "translation"})
+        translation_tag.string = entry["translation"]
+
+        image_tag = entry_soup.new_tag("img", attrs={"class": "feature", "alt": entry["word"]})
+        image_tag["src"] = "test"
+
+        entry_soup.div.append(title_tag)
+        entry_soup.div.append(translation_tag)
+        entry_soup.div.append(image_tag)
+
         with entries_output_path.joinpath(f'{entry["word"]}.html').open("w") as html_output_file:
             html_output_file.write(entry_soup.prettify())
 
