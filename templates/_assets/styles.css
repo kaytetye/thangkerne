@@ -50,7 +50,9 @@ footer {
 
 
 img.feature {
-    max-width: 100px;
+    max-width: 100%;
+    -webkit-box-shadow: 4px 4px 15px 4px rgba(0, 0, 0, 0.20);
+    box-shadow: 4px 4px 15px 4px rgba(0, 0, 0, 0.20);
 }
 
 .scientific_name {
@@ -68,6 +70,12 @@ header {
     flex: 1 0 auto;
     text-align: center;
     color: white;
+}
+
+
+.wrapper {
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
 /* Menu */
