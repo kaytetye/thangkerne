@@ -40,28 +40,3 @@ nav ul {
             "footer  footer";
     }
 }
-
-* {
-    font-family: 'PT Serif', serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    color: #111
-}
-
-a {
-    color: #df7200
-}
-
-header,
-nav,
-article,
-footer {
-    padding: 1em;
-}

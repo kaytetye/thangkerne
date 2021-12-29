@@ -1,17 +1,56 @@
 <!doctype html>
 <html lang="en">
- <head>
-     <title>{{ word }}</title>
- </head>
- <body>
-  <div class="entry">
-   <h1 class="word">
-       {{ word }}
-   </h1>
-   <p class="translation">
-       {{ translation }}
-   </p>
-   <img alt="{{ alt }}" src="{{ src }}" class="feature" />
-  </div>
- </body>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{ word }}</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+    </script>
+    <!-- Our styles -->
+    <link href="../_assets/styles.css" rel="stylesheet"/>
+    <link href="../_assets/grid.css" rel="stylesheet"/>
+    <script src="../_assets/script.js">
+    </script>
+</head>
+<body>
+<div class="entry">
+
+    <h1 class="word">
+        {{ word }}
+    </h1>
+
+    <p class="translation">
+        {{ translation }}
+    </p>
+    <p class="scientific_name">
+        {{ scientific_name }}
+    </p>
+
+    <section>
+        <img alt="{{ word }}" src="../images/{{ image_file_name }}" class="feature"/>
+    </section>
+
+    <section>
+        <audio controls src="../audio/{{ audio_file_name }}"></audio>
+        <audio controls src="../audio/{{ call_audio_file_name }}"></audio>
+    </section>
+
+    <p class="sentence">
+        {{ sentence }}
+    </p>
+    <p class="sentence_translation">
+        {{ sentence_translation }}
+    </p>
+
+
+</div>
+</body>
 </html>

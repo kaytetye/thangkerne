@@ -1,55 +1,46 @@
 
+* {
+    font-family: 'PT Serif', serif;
+}
+
+body {
+    padding: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: #111
+}
+
+a {
+    color: #df7200
+}
+
+header,
+nav,
+article,
+footer {
+    padding: 1em;
+}
+
 .entryAudio {
     height: 20px;
     cursor: pointer;
 }
 
-/* Ben's additions */
-.main-head {
-    font-size: 3rem;
-    font-weight: bold;
-}
-.main-content section {
-    max-width: 60.0rem;
+
+img.feature {
+    max-width: 100px;
 }
 
-#feature_image {
-    width: 100%;
+.scientific_name {
+    font-style: italic;
 }
-
-#feature_image img {
-    width: 100%;
-}
-
-.wsumarcs-entry {
-    border-bottom: none !important;
-    border-radius: 0.2em;
-}
-
-@media only screen and (min-width: 1000px) {
-    .wsumarcs-entry {
-        max-width: 60%;
-    }
-}
-
-.wsumarcs-entryLx {
-    margin: 0 !important;
-}
-
-.main-nav {
-    border-radius: 1em;
-    background-color: #f7f7f7;
-    color: #aeaeae;
-}
-
-#menu {
-    margin: 0;
-}
-#menu li {
-    padding: 0.2em 1em;
-    margin: 0;
-}
-
 
 
 /* Menu */

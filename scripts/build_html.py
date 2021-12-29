@@ -1,11 +1,12 @@
+from bs4 import BeautifulSoup
+from jinja2 import Template
+from pathlib import Path
+from typing import Dict, List
 import csv
 import json
-from pathlib import Path
-import shutil
-from typing import Dict, List
-from bs4 import BeautifulSoup
 import pandas as pd
-from jinja2 import Template
+import shutil
+from helpers import slugify, reset_path
 
 
 def get_categories():
@@ -28,7 +29,7 @@ def get_categories_entries():
     entries_categories = {}
     with Path("../content/jila-kaytetye-admin/categories_entries.csv").open("r") as categories_entries_file:
         csv_reader = csv.reader(categories_entries_file)
-        next(csv_reader) # skip the header
+        next(csv_reader)  # skip the header
         for row in csv_reader:
             category_id = int(row[0])
             entry_id = int(row[1])
@@ -47,29 +48,29 @@ def get_entries():
     # Get all the entries and add entry ids to the category list
     print("==== Getting entries")
     entries = {}
-    # Id,
-    # Entry word,
+    # * Id,
+    # * Entry word,
     # Word type,
-    # Translation,
+    # * Translation,
     # Description,
-    # Published?,
+    # * Published?,
     # Created at,
     # Updated at,
-    # Image file name,
+    # * Image file name,
     # Image content type,
     # Image file size,
     # Image updated at,
-    # Audio file name,
+    # * Audio file name,
     # Audio content type,
     # Audio file size,
     # Audio updated at,
     # Extras,
     # Display order,
-    # Sentence,
-    # Sentence translation,
-    # Scientific name,
+    # * Sentence,
+    # * Sentence translation,
+    # * Scientific name,
     # Admin only notes,
-    # Call audio file name,
+    # * Call audio file name,
     # Call audio content type,
     # Call audio file size,
     # Call audio updated at,
@@ -79,22 +80,39 @@ def get_entries():
     # Sentence audio updated at
     with Path("../content/jila-kaytetye-admin/entries.csv").open("r") as entries_file:
         csv_reader = csv.DictReader(entries_file)
-        # next(csv_reader) # skip the header
         for row in csv_reader:
-            print(row)
-            entry_id = int(row["Id"])
-            word = row["Entry word"]
-            translation = row["Translation"]
-            image_file_name = row["Image file name"]
-            entries[entry_id] = {"id": entry_id,
-                                 "word": word,
-                                 "translation": translation,
-                                 "image_file_name": image_file_name
-                                 }
+            id = int(row["Id"])
+            # Add row data to entry array here
+            entries[id] = {"id": id,
+                           "word": row["Entry word"],
+                           "translation": row["Translation"],
+                           "published": row["Published?"],
+                           "image_file_name": slugify(row["Image file name"]),
+                           "audio_file_name": slugify((row["Audio file name"])),
+                           "sentence": row["Sentence"],
+                           "sentence_translation": row["Sentence translation"],
+                           "scientific_name": row["Scientific name"],
+                           "call_audio_file_name": slugify(row["Call audio file name"]),
+                           }
     return entries
 
 
-def build_category_pages(categories: Dict, entries_categories: Dict, entries: Dict, categories_output_path: Path):
+def build_category_pages(categories: Dict,
+                         entries_categories: Dict,
+                         entries: Dict,
+                         categories_output_path: Path,
+                         project_output_path: Path
+                         ):
+    """
+    Make HTML for the category pages.
+
+    :param categories:
+    :param entries_categories:
+    :param entries:
+    :param categories_output_path:
+    :param project_output_path:
+    :return:
+    """
     for cat_id in categories:
         print(categories[cat_id]["name"])
         cat_name = categories[cat_id]["name"].lower()
@@ -115,37 +133,41 @@ def build_category_pages(categories: Dict, entries_categories: Dict, entries: Di
             html_output_file.write(category_soup.prettify())
 
 
-def build_entry_pages(entries: Dict, entries_output_path: Path):
+def build_entry_pages(entries: Dict,
+                      entries_output_path: Path,
+                      project_output_path: Path
+                      ):
     """
-    Id,Entry word,Word type,Translation,Description,Published?,Created at,Updated at,Image file name,Image content type,Image file size,Image updated at,Audio file name,Audio content type,Audio file size,Audio updated at,Extras,Display order,Sentence,Sentence translation,Scientific name,Admin only notes,Call audio file name,Call audio content type,Call audio file size,Call audio updated at,Sentence audio file name,Sentence audio content type,Sentence audio file size,Sentence audio updated at
+    Make HTML for the entry pages.
 
     :param entries:
     :param entries_output_path:
+    :param project_output_path:
     :return:
     """
+    # copy assets
+    shutil.copytree("../templates/_assets",
+                    project_output_path.joinpath("_assets"), dirs_exist_ok=True)
+
     with open("../templates/entry.html") as template_file:
         tm = Template(template_file.read())
 
     for index, entry in entries.items():
-        html = tm.render(word=entry["word"],
-                         translation=entry["translation"],
-                         alt=entry["word"],
-                         src="test")
+        # Pass row data here
+        print(entry)
+        html = tm.render(entry)
         with entries_output_path.joinpath(f'{entry["word"]}.html').open("w") as html_output_file:
             html_output_file.write(html)
 
 
 def main():
+    project_output_path = Path("../output")
 
     categories_output_path = Path("../output/categories")
-    if categories_output_path.is_dir():
-        shutil.rmtree(categories_output_path)
-    categories_output_path.mkdir(parents=True, exist_ok=True)
+    reset_path(categories_output_path)
 
     entries_output_path = Path("../output/entries")
-    if entries_output_path.is_dir():
-        shutil.rmtree(entries_output_path)
-    entries_output_path.mkdir(parents=True, exist_ok=True)
+    reset_path(entries_output_path)
 
     categories = get_categories()
     categories_entries, entries_categories = get_categories_entries()
@@ -156,9 +178,14 @@ def main():
     build_category_pages(categories=categories,
                          entries_categories=entries_categories,
                          entries=entries,
-                         categories_output_path=categories_output_path)
+                         categories_output_path=categories_output_path,
+                         project_output_path=project_output_path
+                         )
 
-    build_entry_pages(entries=entries, entries_output_path=entries_output_path)
+    build_entry_pages(entries=entries,
+                      entries_output_path=entries_output_path,
+                      project_output_path=project_output_path
+                      )
 
 
 if __name__ == "__main__":
