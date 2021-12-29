@@ -6,7 +6,7 @@ import csv
 import json
 import pandas as pd
 import shutil
-from helpers import slugify, reset_path
+from helpers import slugify, reset_path, custom_sort
 
 
 def get_categories():
@@ -135,7 +135,8 @@ def build_category_pages(categories: Dict,
 
 def build_entry_pages(entries: Dict,
                       entries_output_path: Path,
-                      project_output_path: Path
+                      project_output_path: Path,
+                      menu: List[Dict]
                       ):
     """
     Make HTML for the entry pages.
@@ -154,7 +155,12 @@ def build_entry_pages(entries: Dict,
 
     for index, entry in entries.items():
         # Pass row data here
-        print(entry)
+        categories = [
+            {"name": "one one", "entries": ["ONE", "TWO", "THREE"]},
+            {"name": "two", "entries": ["1", "2", "3"]},
+        ]
+        entry["menu"] = menu
+
         html = tm.render(entry)
         with entries_output_path.joinpath(f'{entry["word"]}.html').open("w") as html_output_file:
             html_output_file.write(html)
@@ -173,18 +179,38 @@ def main():
     categories_entries, entries_categories = get_categories_entries()
     entries = get_entries()
 
-    print(entries)
+    menu = []
+    for index, category in categories.items():
+        if category["id"] in categories_entries:
+            sub_menu = {"name": category["name"], "entries": []}
+            for entry_id in categories_entries[category["id"]]:
+                entry = entries[entry_id]
+                sub_menu["entries"].append({
+                    "id": entry_id,
+                    "text": entry["word"],
+                    "slug": f'{entry["word"]}.html'
+                })
+            custom_sort(sub_menu["entries"], "text")
+            menu.append(sub_menu)
+    print(menu)
 
-    build_category_pages(categories=categories,
-                         entries_categories=entries_categories,
-                         entries=entries,
-                         categories_output_path=categories_output_path,
-                         project_output_path=project_output_path
-                         )
-
+    """
+    categories = [
+        {"name": "one one", "entries": ["ONE", "TWO", "THREE"]},
+        {"name": "two", "entries": ["1", "2", "3"]},
+    ]
+    """
+    # build_category_pages(categories=categories,
+    #                      entries_categories=entries_categories,
+    #                      entries=entries,
+    #                      categories_output_path=categories_output_path,
+    #                      project_output_path=project_output_path
+    #                      )
+    #
     build_entry_pages(entries=entries,
                       entries_output_path=entries_output_path,
-                      project_output_path=project_output_path
+                      project_output_path=project_output_path,
+                      menu=menu
                       )
 
 

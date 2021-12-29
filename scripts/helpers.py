@@ -3,6 +3,7 @@ import re
 import unicodedata
 import shutil
 
+
 def slugify(value, allow_unicode=False):
     """
     Taken from https://github.com/django/django/blob/master/django/utils/text.py
@@ -22,10 +23,12 @@ def slugify(value, allow_unicode=False):
     value = re.sub(r'[-_\s]+', '-', value).strip('-_')
     return f"{value}{ext}".lower()
 
+
 def reset_path(dir_path):
     if dir_path.is_dir():
         shutil.rmtree(dir_path)
     dir_path.mkdir(parents=True, exist_ok=True)
+
 
 def get_files(source_path, extensions):
     all_files = []
@@ -38,3 +41,11 @@ def get_files(source_path, extensions):
         ext = f"**/{extensions}"
         all_files.extend(source_path.glob(ext))
     return all_files
+
+
+def custom_sort(sub_li, key):
+    # reverse = None (Sorts in Ascending order)
+    # key is set to sort using second element of
+    # sublist lambda has been used
+    sub_li.sort(key=lambda x: x[key])
+    return sub_li

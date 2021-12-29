@@ -25,7 +25,7 @@ header,
 nav,
 article,
 footer {
-    padding: 1em;
+    /*padding: 1em;*/
 }
 
 .entryAudio {
@@ -44,37 +44,100 @@ img.feature {
 
 
 /* Menu */
-@media (min-width: 40.0rem) {
-    .main-nav {
-        background-color: transparent;
-    }
-    #menu-checkbox,
-    .main-nav label {
-        display: none;
-    }
+
+
+header {
+    display: flex;
+}
+header .col {
+    flex: 1 0 100px;
+}
+.main-nav {
+    /*background-color: #eee;*/
+}
+/* Hide the checkboxes */
+.main-nav input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+/* Add hamburger icon */
+.hamburger:before {
+    content: "☰ ";
+}
+.main-menu-label {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0;
 }
 
-@media (max-width: 40.0rem) {
-    .main-nav {
-        margin: 0 1em;
-    }
-    .main-nav label {
-        display: block;
-        cursor: pointer;
-        padding: 0 1em;
-        margin: 0;
-    }
-    .main-nav label:before {
-        content: "☰ ";
-    }
-    input#menu-checkbox {
-        display: none;
-    }
-    #menu {
-        max-height: 0;
-        overflow: hidden;
-    }
-    input#menu-checkbox:checked ~ #menu {
-        max-height: 100%;
-    }
+/* Hide the menu */
+#menu {
+    max-height: 0;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+/* Show the menu */
+input#menu-checkbox:checked ~ #menu {
+    max-height: 100%;
+}
+
+#menu {
+    position: fixed;
+    left: 2em;
+    right: 2em;
+    background-color: white;
+    -webkit-box-shadow: 2px 4px 15px -4px rgba(0,0,0,0.38);
+    box-shadow: 2px 4px 15px -4px rgba(0,0,0,0.38);
+}
+
+/* Hide menu items */
+
+/* Show menu items */
+
+.tabs {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tab {
+    width: 100%;
+    overflow: hidden;
+}
+.tab-label {
+    display: flex;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab-label:hover {
+}
+.tab-label::before {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+.tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    transition: all 0.35s;
+}
+.tab-close {
+    display: flex;
+    padding: 1em;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+.tab-close:hover {
+}
+
+input:checked + .tab-label {
+}
+input:checked + .tab-label::before {
+    transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
 }

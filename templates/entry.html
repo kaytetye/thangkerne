@@ -21,35 +21,58 @@
     </script>
 </head>
 <body>
-<div class="entry">
+<div class="wrapper">
 
-    <h1 class="word">
-        {{ word }}
-    </h1>
+    <header class="main-head">
+        <h1>Thangkerne</h1>
+    </header>
 
-    <p class="translation">
-        {{ translation }}
-    </p>
-    <p class="scientific_name">
-        {{ scientific_name }}
-    </p>
+    <nav class="main-nav">
+        <input type="checkbox" id="menu-checkbox">
+        <label class="main-menu-label hamburger" for="menu-checkbox">Menu</label>
+        <div id="menu" class="tabs">
+            {% for category in menu %}
+            <div class="tab">
+                <input type="checkbox" id="check_{{category.name}}">
+                <label class="tab-label" for="check_{{category.name}}">{{ category.name }}</label>
+                {% for entry in category.entries %}
+                <div class="tab-content">
+                    <a href="{{entry.slug}}">{{ entry.text }}</a>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </nav>
 
-    <section>
-        <img alt="{{ word }}" src="../images/{{ image_file_name }}" class="feature"/>
-    </section>
+    <article class="main-content">
+        <h1 class="word">
+            {{ word }}
+        </h1>
 
-    <section>
-        <audio controls src="../audio/{{ audio_file_name }}"></audio>
-        <audio controls src="../audio/{{ call_audio_file_name }}"></audio>
-    </section>
+        <p class="translation">
+            {{ translation }}
+        </p>
+        <p class="scientific_name">
+            {{ scientific_name }}
+        </p>
 
-    <p class="sentence">
-        {{ sentence }}
-    </p>
-    <p class="sentence_translation">
-        {{ sentence_translation }}
-    </p>
+        <section>
+            <img alt="{{ word }}" src="../images/{{ image_file_name }}" class="feature"/>
+        </section>
 
+        <section>
+            <audio controls src="../audio/{{ audio_file_name }}"></audio>
+            <audio controls src="../audio/{{ call_audio_file_name }}"></audio>
+        </section>
+
+        <p class="sentence">
+            {{ sentence }}
+        </p>
+        <p class="sentence_translation">
+            {{ sentence_translation }}
+        </p>
+    </article>
 
 </div>
 </body>
