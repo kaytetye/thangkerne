@@ -2,7 +2,9 @@
 * {
     font-family: 'PT Serif', serif;
 }
-
+body {
+    background-color: #fff0df;
+}
 .wrapper {
     padding: 0 2em;
 }

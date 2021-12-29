@@ -144,6 +144,7 @@ def build_entry_pages(entries: Dict,
     :param entries:
     :param entries_output_path:
     :param project_output_path:
+    :param menu:
     :return:
     """
     # copy assets
@@ -155,12 +156,7 @@ def build_entry_pages(entries: Dict,
 
     for index, entry in entries.items():
         # Pass row data here
-        categories = [
-            {"name": "one one", "entries": ["ONE", "TWO", "THREE"]},
-            {"name": "two", "entries": ["1", "2", "3"]},
-        ]
         entry["menu"] = menu
-
         html = tm.render(entry)
         with entries_output_path.joinpath(f'{entry["word"]}.html').open("w") as html_output_file:
             html_output_file.write(html)
