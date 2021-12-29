@@ -35,15 +35,15 @@
             <label class="main-menu-label hamburger" for="menu-checkbox">Menu</label>
             <div id="menu" class="tabs">
                 {% for category in menu %}
-                <div class="tab">
-                    <input type="checkbox" id="check_{{category.name}}">
-                    <label class="tab-label" for="check_{{category.name}}">{{ category.name }}</label>
-                    {% for entry in category.entries %}
-                    <div class="tab-content">
-                        <a href="{{entry.slug}}">{{ entry.text }}</a>
+                    <div class="tab">
+                        <input type="checkbox" id="check_{{category.name}}">
+                        <label class="tab-label" for="check_{{category.name}}">{{ category.name }}</label>
+                        {% for entry in category.entries %}
+                            <div class="tab-content">
+                                <a href="{{entry.slug}}">{{ entry.text }}</a>
+                            </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
                 {% endfor %}
             </div>
         </span>
@@ -64,7 +64,7 @@
 
         <section>
             <audio controls src="../audio/{{ audio_file_name }}"></audio>
-            <audio controls src="../audio/{{ call_audio_file_name }}"></audio>
+<!--            <audio controls src="../audio/{{ call_audio_file_name }}"></audio>-->
         </section>
 
         <p class="sentence">

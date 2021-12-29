@@ -8,7 +8,7 @@ from helpers import slugify, reset_path, get_files
 def process_images(source_path: Path, target_path: Path):
     print("\n\n==== Processing images")
     # Process images by combining languages into a single dir
-    files = get_files(source_path, ('*.jpg', '*.jpeg', '*.gif'))
+    files = get_files(source_path, ('*.jpg', '*.jpeg', '*.gif', '*.JPG', '*.JPEG', '*.GIF'))
     print(files)
     for each_file in files:
         file_name = each_file.parts

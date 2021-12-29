@@ -1,5 +1,8 @@
 .idea
 scripts/__pycache__/
+.firebase/
+firebase-debug.log
+
 content/*
 media/*
 output/*

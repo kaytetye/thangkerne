@@ -44,3 +44,29 @@
 }
 
 */
+
+
+
+#home .wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+#home .wrapper div {
+    height: 150px;
+    width: 150px;
+}
+
+#home .entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .entry a {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 0.2em;
+}

@@ -15,21 +15,22 @@
     <!-- Our styles -->
     <link href="./_assets/styles.css" rel="stylesheet" />
     <link href="./_assets/grid.css" rel="stylesheet" />
-    <script src="./_assets/script.js">
     </script>
+    <style>
+        .entry {
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </head>
 
-<body>
+<body id="home">
     <div class="wrapper">
-        <header class="main-head">HEADER</header>
-        <nav class="main-nav">
-            <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox">Menu</label>
-        </nav>
-        <article class="main-content">
-            CONTENT
-        </article>
-        <footer class="main-footer"></footer>
+        {% for key, value in entries.items() %}
+        <div class="entry" style="background-image: url(images/{{value.image_file_name}})">
+            <a href="entries/{{value.word}}.html">{{value.word}}</a>
+        </div>
+        {% endfor %}
     </div>
 </body>
 

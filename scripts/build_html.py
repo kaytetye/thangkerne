@@ -97,40 +97,24 @@ def get_entries():
     return entries
 
 
-def build_category_pages(categories: Dict,
-                         entries_categories: Dict,
-                         entries: Dict,
-                         categories_output_path: Path,
-                         project_output_path: Path
-                         ):
+def build_index_page(entries: Dict, project_output_path: Path):
     """
-    Make HTML for the category pages.
+    Make HTML for the index page.
 
-    :param categories:
-    :param entries_categories:
     :param entries:
-    :param categories_output_path:
     :param project_output_path:
     :return:
     """
-    for cat_id in categories:
-        print(categories[cat_id]["name"])
-        cat_name = categories[cat_id]["name"].lower()
-        # Build a category page with BeautifulSoup
-        category_soup = BeautifulSoup(f'<p>{categories[cat_id]["name"]} menu</p><ul></ul>', "html.parser")
-        for entry_id, cat_ids in entries_categories.items():
-            if cat_id in cat_ids:
-                # Build a link with the entry word
-                entry = entries[entry_id]
-                word = entry["word"]
-                li_tag = category_soup.new_tag("li")
-                li_a_tag = category_soup.new_tag("a", attrs={"href": f"../entries/{word}.html", "class": "entry-link"})
-                li_a_tag.string = word
-                li_tag.append(li_a_tag)
-                category_soup.ul.append(li_tag)
+    # copy assets
+    shutil.copytree("../templates/_assets",
+                    project_output_path.joinpath("_assets"), dirs_exist_ok=True)
+    print(entries)
 
-        with categories_output_path.joinpath(f"{cat_name}.html").open("w") as html_output_file:
-            html_output_file.write(category_soup.prettify())
+    with open("../templates/index.html") as template_file:
+        tm = Template(template_file.read())
+        html = tm.render(entries=entries)
+        with project_output_path.joinpath(f'index.html').open("w") as html_output_file:
+            html_output_file.write(html)
 
 
 def build_entry_pages(entries: Dict,
@@ -188,21 +172,10 @@ def main():
                 })
             custom_sort(sub_menu["entries"], "text")
             menu.append(sub_menu)
-    print(menu)
 
-    """
-    categories = [
-        {"name": "one one", "entries": ["ONE", "TWO", "THREE"]},
-        {"name": "two", "entries": ["1", "2", "3"]},
-    ]
-    """
-    # build_category_pages(categories=categories,
-    #                      entries_categories=entries_categories,
-    #                      entries=entries,
-    #                      categories_output_path=categories_output_path,
-    #                      project_output_path=project_output_path
-    #                      )
-    #
+
+    build_index_page(entries=entries, project_output_path=project_output_path )
+
     build_entry_pages(entries=entries,
                       entries_output_path=entries_output_path,
                       project_output_path=project_output_path,
