@@ -110,7 +110,7 @@ header {
     box-shadow: none;
 }
 /* Show the menu */
-.main-nav:hover #menu,
+.main-nav .nav:hover #menu,
 input#menu-checkbox:checked ~ #menu {
     max-height: 100%;
     -webkit-box-shadow: 4px 4px 15px 4px rgba(0, 0, 0, 0.40);
