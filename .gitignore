@@ -1,19 +1,8 @@
 .idea
 scripts/__pycache__/
-.firebase/
+.firebase
 firebase-debug.log
 
-content/*
-media/*
-output/*
 tmp/*
-
-all_images/*
-all_audio/*
-
-# Keep the folders themselves
-
-!content/.keep
-!media/.keep
-!output/index/*
+# Keep the folder
 !tmp/.keep
