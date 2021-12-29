@@ -16,20 +16,16 @@
     </script>
     <!-- Our styles -->
     <link href="../_assets/styles.css" rel="stylesheet"/>
-    <link href="../_assets/grid.css" rel="stylesheet"/>
+<!--    <link href="../_assets/grid.css" rel="stylesheet"/>-->
     <script src="../_assets/script.js">
     </script>
 </head>
 <body>
-<div class="wrapper">
-
-    <header class="main-head">
-        <h1>Thangkerne</h1>
-    </header>
 
     <nav class="main-nav">
         <input type="checkbox" id="menu-checkbox">
         <label class="main-menu-label hamburger" for="menu-checkbox">Menu</label>
+        <span class="page-title">Thangkerne</a></span>
         <div id="menu" class="tabs">
             {% for category in menu %}
             <div class="tab">
@@ -45,11 +41,14 @@
         </div>
     </nav>
 
-    <article class="main-content">
+<div class="wrapper">
+    <header class="main-head">
         <h1 class="word">
             {{ word }}
         </h1>
+    </header>
 
+    <article class="main-content">
         <p class="translation">
             {{ translation }}
         </p>

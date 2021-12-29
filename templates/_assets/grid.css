@@ -21,9 +21,11 @@
 
 @media (min-width: 40.0rem) {
     .wrapper {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "header  nav"
-            "content content";
+            "nav"
+            "header"
+            "content";
     }
 }
+
