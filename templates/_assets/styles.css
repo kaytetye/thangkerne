@@ -92,6 +92,13 @@ img.feature {
 
 /* Menu */
 
+.main-menu-label,
+.tab-label,
+.home-link a,
+.tab-content a {
+    font-family: "PT Sans";
+    font-weight: bold;
+}
 
 /* Hide the checkboxes */
 .main-nav input {
@@ -108,7 +115,7 @@ img.feature {
     padding: 0 1em;
 }
 .main-menu-label:hover {
-    background-color: orange;
+    color: #aaa;
 }
 /* Hide the menu */
 @media (min-width: 40.0rem) {
