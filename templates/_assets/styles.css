@@ -2,6 +2,10 @@
     font-family: 'PT Serif', serif;
 }
 
+html, body {
+  overscroll-behavior-x: none !important;
+}
+
 body {
     background-color: #fff0df;
 }
