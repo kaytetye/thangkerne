@@ -1,7 +1,7 @@
-
 * {
     font-family: 'PT Serif', serif;
 }
+
 body {
     background-color: #fff0df;
 }
@@ -10,7 +10,6 @@ body {
     margin: 0 auto;
     padding: 0 2em;
 }
-
 
 @media (max-width: 40.0rem) {
    .wrapper {
@@ -23,11 +22,11 @@ body {
 }
 
 header {
-    padding: 1em;
+    padding: 1em 0 0 1em;
 }
 
 .main-nav {
-    padding: 0 1em;
+    padding: 1em;
 }
 
 .main-menu-label{
@@ -36,9 +35,8 @@ header {
 
 .main-content {
     max-width: 40em;
-    padding: 1em;
+    padding: 0 1em 2em 1em;
 }
-
 
 h1,
 h2,
@@ -64,7 +62,28 @@ img.feature {
     font-style: italic;
 }
 
+.tab {
+    margin-bottom: 2em;
+}
 
+.tab-content a {
+    display: flex;
+    align-items: center;
+}
+.tab-content a:hover .thumbnail {
+    transform: scale(1.2);
+}
+
+.thumbnail {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    margin: 0.2em 0.4em 0.4em 0;
+    transition: all .2s;
+}
 
 
 /* Menu */
@@ -94,9 +113,11 @@ img.feature {
     }
 }
 @media (max-width: 40.0rem) {
+     /* Hide the menu */
     #menu {
         max-height: 0;
     }
+
     /* Show the menu */
     .main-nav .nav:hover #menu,
     input#menu-checkbox:checked ~ #menu {
@@ -107,7 +128,6 @@ img.feature {
         border-radius: 8px;
         overflow: hidden;
     }
-
     .tab {
         width: 100%;
         overflow: hidden;
@@ -117,8 +137,6 @@ img.feature {
         padding: 1em;
         font-weight: bold;
         cursor: pointer;
-    }
-    .tab-label:hover {
     }
     .tab-label::before {
         content: "❯";
@@ -130,7 +148,6 @@ img.feature {
     .tab-content {
         max-height: 0;
         padding: 0 1em;
-        /*transition: all 0.35s;*/
     }
 
     input:checked + .tab-label {
@@ -142,5 +159,8 @@ img.feature {
         max-height: 100vh;
         padding: 0.5em 2em;
     }
-
+    .home-link {
+        padding-top: 1em;
+        margin: 1.8em;
+    }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Bird app</title>
+    <title>Thangkerne | Kaytetye birds</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -16,19 +16,88 @@
     <link href="./_assets/styles.css" rel="stylesheet" />
     <link href="./_assets/grid.css" rel="stylesheet" />
     <style>
-        .entry {
-            background-position: center;
-            background-size: cover;
+        #home {
+            background: black;
+            padding: 4px;
         }
+        .grid {
+            display: grid;
+            gap: 2px;
+            align-items: stretch;
+            width: 100vw;
+            height: 100vh;
+        }
+        .grid-container--fit {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .grid-item {
+            min-height: 120px;
+        }
+        .entry {
+            overflow: hidden;
+            position: relative;
+            border-radius: 1em;
+        }
+        .entry a {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .entry p, .entry .home-thumbnail {
+            position: absolute;
+        }
+        .entry p {
+            z-index: 1;
+            width: 100%;
+            margin:0;
+            text-align: center;
+            color: white;
+            background: linear-gradient(120deg, rgba(240,100,0,0.2) 0%, rgba(240,100,0,0.8) 100%);
+        }
+        .entry .home-thumbnail {
+            z-index: -1;
+        }
+        .home-thumbnail {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            transition: all .5s;
+        }
+        .entry a:hover .home-thumbnail {
+            transform: scale(1.2);
+        }
+        .hero {
+            display: flex;
+        }
+        .entry.hero p {
+            font-size: 1.2em;
+            font-weight: bold;
+            align-self: center;
+            background: none;
+        }
+
+
     </style>
 </head>
 
 <body id="home">
-    <div class="wrapper">
-        {% for key, value in entries.items() %}
-        <div class="entry" style="background-image: url(images/{{value.image_file_name}})">
-            <a href="entries/{{value.word}}.html">{{value.word}}</a>
+    <div class="grid grid-container--fit">
+        <div class="grid-item entry hero">
+            <p>Thangkerne</p>
         </div>
+        {% for key, value in entries.items() %}
+            <div class="grid-item entry">
+                <a href="entries/{{value.word}}.html">
+                    <p>{{value.word}}</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/{{value.image_file_name}})"></div>
+                </a>
+            </div>
         {% endfor %}
     </div>
 </body>

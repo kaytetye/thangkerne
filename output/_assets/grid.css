@@ -19,56 +19,11 @@
     grid-area: content;
 }
 
-
 @media (min-width: 40.0rem) {
     .wrapper {
         grid-template-columns: 1fr 3fr;
         grid-template-areas:
-            "header header"
+            ". header"
             "nav content";
     }
-}
-
-/*
-
-.main-head {
-    background-color: pink;
-}
-
-.main-nav {
-    background-color: yellow;
-}
-
-.main-content {
-    background-color: blue;
-}
-
-*/
-
-
-
-#home .wrapper {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-}
-
-#home .wrapper div {
-    height: 150px;
-    width: 150px;
-}
-
-#home .entry {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-#home .entry a {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 1em;
-    border-radius: 0.2em;
-    width: 100%;
 }

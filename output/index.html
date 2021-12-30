@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Bird app</title>
+    <title>Thangkerne | Kaytetye birds</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -15,193 +15,409 @@
     <!-- Our styles -->
     <link href="./_assets/styles.css" rel="stylesheet" />
     <link href="./_assets/grid.css" rel="stylesheet" />
-    </script>
     <style>
-        .entry {
-            background-position: center;
-            background-size: cover;
+        #home {
+            background: black;
+            padding: 4px;
         }
+        .grid {
+            display: grid;
+            gap: 2px;
+            align-items: stretch;
+            width: 100vw;
+            height: 100vh;
+        }
+        .grid-container--fit {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .grid-item {
+            min-height: 120px;
+        }
+        .entry {
+            overflow: hidden;
+            position: relative;
+            border-radius: 1em;
+        }
+        .entry a {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .entry p, .entry .home-thumbnail {
+            position: absolute;
+        }
+        .entry p {
+            z-index: 1;
+            width: 100%;
+            margin:0;
+            text-align: center;
+            color: white;
+            background: linear-gradient(120deg, rgba(240,100,0,0.2) 0%, rgba(240,100,0,0.8) 100%);
+        }
+        .entry .home-thumbnail {
+            z-index: -1;
+        }
+        .home-thumbnail {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            transition: all .5s;
+        }
+        .entry a:hover .home-thumbnail {
+            transform: scale(1.2);
+        }
+        .hero {
+            display: flex;
+        }
+        .entry.hero p {
+            font-size: 1.2em;
+            font-weight: bold;
+            align-self: center;
+            background: none;
+        }
+
+
     </style>
 </head>
 
 <body id="home">
-    <div class="wrapper">
-        
-        <div class="entry" style="background-image: url(images/blue-tongue.gif)">
-            <a href="entries/test.html">test</a>
+    <div class="grid grid-container--fit">
+        <div class="grid-item entry hero">
+            <p>Thangkerne</p>
         </div>
         
-        <div class="entry" style="background-image: url(images/grey-crowned-babbler-julian-robinson.jpg)">
-            <a href="entries/tyewaketye.html">tyewaketye</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/tyewaketye.html">
+                    <p>tyewaketye</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/grey-crowned-babbler-julian-robinson.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/willwagtailyudumumile301207003bg.jpg)">
-            <a href="entries/therre-therre.html">therre-therre</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/therre-therre.html">
+                    <p>therre-therre</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/willwagtailyudumumile301207003bg.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/rtwere-bg.jpg)">
-            <a href="entries/rtwere.html">rtwere</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/rtwere.html">
+                    <p>rtwere</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/rtwere-bg.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/southern-boobook-julian-robinson.jpg)">
-            <a href="entries/pwelerrnge.html">pwelerrnge</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/pwelerrnge.html">
+                    <p>pwelerrnge</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/southern-boobook-julian-robinson.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-zebra-finch-01.jpg)">
-            <a href="entries/ngimarre.html">ngimarre</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/ngimarre.html">
+                    <p>ngimarre</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-zebra-finch-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-torresian-crow-01.jpg)">
-            <a href="entries/nganke.html">nganke</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/nganke.html">
+                    <p>nganke</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-torresian-crow-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/spotted-nightjar-patrick-coin.jpg)">
-            <a href="entries/kwerte-kwerte.html">kwerte-kwerte</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/kwerte-kwerte.html">
+                    <p>kwerte-kwerte</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/spotted-nightjar-patrick-coin.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/major-mitchell-cockatoo-julian-robinson-01.jpg)">
-            <a href="entries/akngkwene.html">akngkwene</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/akngkwene.html">
+                    <p>akngkwene</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/major-mitchell-cockatoo-julian-robinson-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/pallid-cuckoo-2013-06-13-frederick-blakeley-memorial-01.jpg)">
-            <a href="entries/tyengaytey-ayteye.html">tyengaytey-ayteye</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/tyengaytey-ayteye.html">
+                    <p>tyengaytey-ayteye</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/pallid-cuckoo-2013-06-13-frederick-blakeley-memorial-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/diamond-dove-01.jpg)">
-            <a href="entries/kwerlekweke.html">kwerlekweke</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/kwerlekweke.html">
+                    <p>kwerlekweke</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/diamond-dove-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-galahs-2012-08-13-01.jpg)">
-            <a href="entries/kelelkelelke.html">kelelkelelke</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/kelelkelelke.html">
+                    <p>kelelkelelke</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-galahs-2012-08-13-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/red-capped-robin-2013-06-13-frederick-blakeley-memorial-02.jpg)">
-            <a href="entries/karlatwerreye.html">karlatwerreye</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/karlatwerreye.html">
+                    <p>karlatwerreye</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/red-capped-robin-2013-06-13-frederick-blakeley-memorial-02.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/ilpertenye-bg.jpg)">
-            <a href="entries/ilpertenye.html">ilpertenye</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/ilpertenye.html">
+                    <p>ilpertenye</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/ilpertenye-bg.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-bush-stone-curlew-01.jpg)">
-            <a href="entries/ilere.html">ilere</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/ilere.html">
+                    <p>ilere</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-bush-stone-curlew-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/red-tailed-black-cockatoo-group-above-03.jpg)">
-            <a href="entries/ilekaynewene.html">ilekaynewene</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/ilekaynewene.html">
+                    <p>ilekaynewene</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/red-tailed-black-cockatoo-group-above-03.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-yellow-throated-miner-01.jpg)">
-            <a href="entries/aympaympe.html">aympaympe</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/aympaympe.html">
+                    <p>aympaympe</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-yellow-throated-miner-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/spiny-cheeked-honeyeater-julian-robinson.jpg)">
-            <a href="entries/arrakwer-akwere.html">arrakwer-akwere</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/arrakwer-akwere.html">
+                    <p>arrakwer-akwere</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/spiny-cheeked-honeyeater-julian-robinson.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-australian-ringneck-01.jpg)">
-            <a href="entries/arlpatye.html">arlpatye</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/arlpatye.html">
+                    <p>arlpatye</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-australian-ringneck-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-rufous-whistler-01.jpg)">
-            <a href="entries/aleterrpe-terrpe.html">aleterrpe-terrpe</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/aleterrpe-terrpe.html">
+                    <p>aleterrpe-terrpe</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-rufous-whistler-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-striated-pardalote-01.jpg)">
-            <a href="entries/kwarlpatelk-alyelkelye.html">kwarlpatelk-alyelkelye</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/kwarlpatelk-alyelkelye.html">
+                    <p>kwarlpatelk-alyelkelye</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-striated-pardalote-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-singing-honey-eater-01.jpg)">
-            <a href="entries/aherrk-akwernenhe.html">aherrk-akwernenhe</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/aherrk-akwernenhe.html">
+                    <p>aherrk-akwernenhe</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-singing-honey-eater-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-crested-pigeon-01.jpg)">
-            <a href="entries/pelkere.html">pelkere</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/pelkere.html">
+                    <p>pelkere</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-crested-pigeon-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-crested-bellbird-01.jpg)">
-            <a href="entries/kwepalepale.html">kwepalepale</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/kwepalepale.html">
+                    <p>kwepalepale</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-crested-bellbird-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/common-bronzewing-julian-robinson.jpg)">
-            <a href="entries/arntepe.html">arntepe</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/arntepe.html">
+                    <p>arntepe</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/common-bronzewing-julian-robinson.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/cockatiel-craig-nieminski.jpg)">
-            <a href="entries/karnawilkere.html">karnawilkere</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/karnawilkere.html">
+                    <p>karnawilkere</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/cockatiel-craig-nieminski.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/channel-billed-cuckoo-aviceda-01.jpg)">
-            <a href="entries/lkwarrer-arrpwernenhe.html">lkwarrer-arrpwernenhe</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/lkwarrer-arrpwernenhe.html">
+                    <p>lkwarrer-arrpwernenhe</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/channel-billed-cuckoo-aviceda-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-australian-bustard-01.jpg)">
-            <a href="entries/arwengerrpe.html">arwengerrpe</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/arwengerrpe.html">
+                    <p>arwengerrpe</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-australian-bustard-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-budgerigar-01.jpg)">
-            <a href="entries/atetherre.html">atetherre</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/atetherre.html">
+                    <p>atetherre</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-budgerigar-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-brown-falcon-01.jpg)">
-            <a href="entries/kerrkerlantye.html">kerrkerlantye</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/kerrkerlantye.html">
+                    <p>kerrkerlantye</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-brown-falcon-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/western-bowerbird-2013-05-17-simpsons-gap-02.jpg)">
-            <a href="entries/akerrke.html">akerrke</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/akerrke.html">
+                    <p>akerrke</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/western-bowerbird-2013-05-17-simpsons-gap-02.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/black-tailed-native-hen-waring.jpg)">
-            <a href="entries/karlayteng-aytenge.html">karlayteng-aytenge</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/karlayteng-aytenge.html">
+                    <p>karlayteng-aytenge</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/black-tailed-native-hen-waring.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/masked-wswallowaspdespkbg.jpg)">
-            <a href="entries/alpantywerle.html">alpantywerle</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/alpantywerle.html">
+                    <p>alpantywerle</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/masked-wswallowaspdespkbg.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/black-faced-cuckoo-shrike-julian-robinson.jpg)">
-            <a href="entries/amatheng-amathenge.html">amatheng-amathenge</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/amatheng-amathenge.html">
+                    <p>amatheng-amathenge</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/black-faced-cuckoo-shrike-julian-robinson.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-black-breasted-buzzard-01.jpg)">
-            <a href="entries/twetime.html">twetime</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/twetime.html">
+                    <p>twetime</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-black-breasted-buzzard-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-black-kite-02.jpg)">
-            <a href="entries/etnkwele.html">etnkwele</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/etnkwele.html">
+                    <p>etnkwele</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-black-kite-02.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-barn-owl-01.jpg)">
-            <a href="entries/arrkarre.html">arrkarre</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/arrkarre.html">
+                    <p>arrkarre</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-barn-owl-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/red-kneed-dotterel-tom-tarrant.jpg)">
-            <a href="entries/tyelkather-athere.html">tyelkather-athere</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/tyelkather-athere.html">
+                    <p>tyelkather-athere</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/red-kneed-dotterel-tom-tarrant.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/banded-lapwing-julian-robinson.jpg)">
-            <a href="entries/tyelkather-athere.html">tyelkather-athere</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/tyelkather-athere.html">
+                    <p>tyelkather-athere</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/banded-lapwing-julian-robinson.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/)">
-            <a href="entries/kwayekwaye.html">kwayekwaye</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/kaperle-kaperle.html">
+                    <p>kaperle-kaperle</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-australasian-pipit-02.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-australasian-pipit-02.jpg)">
-            <a href="entries/kaperle-kaperle.html">kaperle-kaperle</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/rrpwere alkenhe.html">
+                    <p>rrpwere alkenhe</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-australian-magpie-01.jpg)"></div>
+                </a>
+            </div>
         
-        <div class="entry" style="background-image: url(images/waring-australian-magpie-01.jpg)">
-            <a href="entries/rrpwere alkenhe.html">rrpwere alkenhe</a>
-        </div>
-        
-        <div class="entry" style="background-image: url(images/)">
-            <a href="entries/eleterre-kame-kame.html">eleterre-kame-kame</a>
-        </div>
-        
-        <div class="entry" style="background-image: url(images/waring-australian-hobby-02.jpg)">
-            <a href="entries/ngimarre alarrewene.html">ngimarre alarrewene</a>
-        </div>
+            <div class="grid-item entry">
+                <a href="entries/ngimarre alarrewene.html">
+                    <p>ngimarre alarrewene</p>
+                    <div class="home-thumbnail"
+                         style="background-image: url(images/waring-australian-hobby-02.jpg)"></div>
+                </a>
+            </div>
         
     </div>
 </body>
