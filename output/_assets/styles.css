@@ -89,12 +89,17 @@ img.feature {
     transition: all .2s;
 }
 
+.logos {
+    background: white;
+    text-align: center;
+}
 
 /* Menu */
 
 .main-menu-label,
 .tab-label,
 .home-link a,
+.about-link a,
 .tab-content a {
     font-family: "PT Sans";
     font-weight: bold;
@@ -170,7 +175,8 @@ img.feature {
         max-height: 100vh;
         padding: 0.5em 2em;
     }
-    .home-link {
+    .home-link,
+    .about-link {
         padding-top: 1em;
         margin: 1.8em;
     }

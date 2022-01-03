@@ -138,6 +138,10 @@ def build_entry_pages(entries: Dict,
             html_output_file.write(html)
 
 
+def copy_about_page(project_output_path: Path):
+    shutil.copy("../templates/about.html", project_output_path)
+
+
 def main():
     project_output_path = Path("../output")
 
@@ -168,6 +172,7 @@ def main():
             custom_sort(sub_menu["entries"], "text")
             menu.append(sub_menu)
 
+    copy_about_page(project_output_path=project_output_path)
 
     build_index_page(entries=entries, project_output_path=project_output_path )
 
