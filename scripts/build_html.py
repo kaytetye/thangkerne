@@ -89,6 +89,7 @@ def get_entries():
                                "sentence_translation": row["Sentence translation"],
                                "scientific_name": row["Scientific name"],
                                "call_audio_file_name": slugify(row["Call audio file name"]),
+                               "menu_slug": slugify(row["Entry word"]),
                                }
     return entries
 
@@ -142,6 +143,17 @@ def copy_about_page(project_output_path: Path):
     shutil.copy("../templates/about.html", project_output_path)
 
 
+def build_menu_highlight_css(entries: Dict,
+                             project_output_path: Path):
+    print(entries)
+    with open("../templates/menu_highlight.css") as template_file:
+        tm = Template(template_file.read())
+        html = tm.render(entries=entries)
+        with project_output_path.joinpath("_assets/menu_highlight.css").open("w") as css_output_file:
+            css_output_file.write(html)
+
+
+
 def main():
     project_output_path = Path("../output")
 
@@ -167,12 +179,15 @@ def main():
                         "id": entry_id,
                         "text": entry["word"],
                         "slug": f'{entry["word"]}.html',
-                        "image_file_name": entry["image_file_name"]
+                        "image_file_name": entry["image_file_name"],
+                        "menu_slug": entry["menu_slug"]
                     })
             custom_sort(sub_menu["entries"], "text")
             menu.append(sub_menu)
 
     copy_about_page(project_output_path=project_output_path)
+
+    build_menu_highlight_css(entries=entries, project_output_path=project_output_path)
 
     build_index_page(entries=entries, project_output_path=project_output_path )
 

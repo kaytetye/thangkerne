@@ -1,0 +1,10 @@
+{% for key, entry in entries.items() %}
+body.{{ entry.menu_slug }} .tab-content.{{ entry.menu_slug }} {
+    background-color: #df7200;
+}
+
+body.{{ entry.menu_slug }} .tab-content.{{ entry.menu_slug }} a {
+    color: black;
+}
+
+{% endfor %}

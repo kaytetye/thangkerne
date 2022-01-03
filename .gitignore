@@ -6,3 +6,6 @@ firebase-debug.log
 tmp/*
 # Keep the folder
 !tmp/.keep
+
+output/entries/*
+output/_assets/*

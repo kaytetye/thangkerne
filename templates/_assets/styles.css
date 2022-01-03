@@ -62,12 +62,23 @@ img.feature {
     box-shadow: 4px 4px 15px 4px rgba(0, 0, 0, 0.20);
 }
 
+.translation,
+.scientific_name {
+    color: #555c8b;
+}
+
 .scientific_name {
     font-style: italic;
 }
 
 .tab {
     margin-bottom: 2em;
+}
+
+.tab-content {
+    padding: 0.4em;
+    margin: 0.4em 0;
+    border-radius: 1em;
 }
 
 .tab-content a {
@@ -84,8 +95,8 @@ img.feature {
     background-repeat: no-repeat;
     height: 3em;
     width: 3em;
+    margin-right: 0.4em;
     border-radius: 50%;
-    margin: 0.2em 0.4em 0.4em 0;
     transition: all .2s;
 }
 

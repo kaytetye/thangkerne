@@ -16,16 +16,20 @@
     </script>
     <!-- Our styles -->
     <link href="../_assets/styles.css" rel="stylesheet"/>
+    <link href="../_assets/menu_highlight.css" rel="stylesheet"/>
     <link href="../_assets/grid.css" rel="stylesheet"/>
     <script src="../_assets/script.js">
     </script>
 </head>
-<body>
+<body class="{{ menu_slug }}">
 <div class="wrapper">
     <header class="main-head">
         <h1 class="word">
             {{ word }}
         </h1>
+        <section>
+            <audio controls src="../audio/{{ audio_file_name }}"></audio>
+        </section>
     </header>
 
 
@@ -41,10 +45,10 @@
                         <input type="checkbox" id="check_{{ category.name }}">
                         <label class="tab-label" for="check_{{ category.name }}">{{ category.name }}</label>
                         {% for entry in category.entries %}
-                            <div class="tab-content">
+                            <div class="tab-content {{ entry.id}} {{ entry.menu_slug }}">
                                 <a href="{{ entry.slug }}">
                                     <div class="thumbnail"
-                                         style="background-image: url(../images/{{entry.image_file_name}})"></div>
+                                         style="background-image: url(../images/{{ entry.image_file_name }})"></div>
                                     {{ entry.text }}
                                 </a>
                             </div>
@@ -66,11 +70,6 @@
 
         <section>
             <img alt="{{ word }}" src="../images/{{ image_file_name }}" class="feature"/>
-        </section>
-
-        <section>
-            <audio controls src="../audio/{{ audio_file_name }}"></audio>
-<!--            <audio controls src="../audio/{{ call_audio_file_name }}"></audio>-->
         </section>
 
         <p class="sentence">
