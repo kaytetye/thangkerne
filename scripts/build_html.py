@@ -42,7 +42,6 @@ def get_categories_entries() -> Dict:
 def get_entries() -> Dict:
     # Get all the entries and add entry ids to the category list
     print("==== Getting entries")
-    entries = {}
     # * Id,
     # * Entry word,
     # Word type,
@@ -73,12 +72,14 @@ def get_entries() -> Dict:
     # Sentence audio content type,
     # Sentence audio file size,
     # Sentence audio updated at
+    entries = {}
     with Path("../content/jila-kaytetye-admin/entries.csv").open("r") as entries_file:
         csv_reader = csv.DictReader(entries_file)
         for row in csv_reader:
+            print(row)
             id = int(row["Id"])
             # Add row data to entry array here
-            if row["Published?"] == "true":
+            if row["Published?"] == "TRUE":
                 entries[id] = {"id": id,
                                "word": row["Entry word"],
                                "translation": row["Translation"],
@@ -91,7 +92,7 @@ def get_entries() -> Dict:
                                "call_audio_file_name": slugify(row["Call audio file name"]),
                                "menu_slug": slugify(row["Entry word"]),
                                }
-    return entries
+        return entries
 
 
 def build_index_page(entries: Dict, project_output_path: Path):
@@ -199,6 +200,7 @@ def main():
     categories = get_categories()
     categories_entries = get_categories_entries()
     entries = get_entries()
+    print(entries)
 
     menu = build_flat_menu(entries)
 

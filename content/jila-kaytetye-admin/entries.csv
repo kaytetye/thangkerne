@@ -122,7 +122,7 @@ alternate_spellings: []
 164,kwerte-kwerte,noun,Spotted Nightjar,,TRUE,15/8/16 0:51,15/8/16 0:51,spotted-nightjar-patrick-coin.jpg,image/jpeg,86120,15/8/16 0:51,spotted-nightjar-K.mp3,audio/mp3,150976,15/8/16 0:51,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
-",,"Kwerte-kwerte nyartepe thangkerne errpwerle kape arne apenye intetyeng-intetye. Thangkerne nyartepe arlpankele arwelele anteyane kape athenge tyampe. Thangkerne nyartelepe aynenke perrkaltye, ayepayte kape nterrenge. Atnkwarengele angkenke 'kwerte-kwerte, kwerte-kwerte, kwerte-kwerte'.","The nightjar is a black bird with brown spots. This bird lives on the plains or under trees and grass. It eats grasshoppers, caterpillars and seeds. At night it calls ""kwerte-kwerte, kwerte-kwerte, kwerte-kwerte"".",Eurostopodus argus,,25_Spotted_Nightjar_(advertising_call_-_AM).mp3,audio/mp3,1011494,15/8/16 0:51,,,,
+",,"Kwerte-kwerte nyartepe thangkerne errpwerle kape arne apenye intetyeng-intetye. Thangkerne nyartepe arlpankele arwelele anteyane kape athenge tyampe. Thangkerne nyartelepe aynenke perrkaltye, ayepayte kape nterrenge. Atnkwarengele angkenke 'kwerte-kwerte, kwerte-kwerte, kwerte-kwerte'.","The nightjar is a black bird with brown spots. This bird lives on the plains or under trees and grass. It eats grasshoppers, caterpillars and seeds. At night it calls 'kwerte-kwerte, kwerte-kwerte, kwerte-kwerte'.",Eurostopodus argus,,25_Spotted_Nightjar_(advertising_call_-_AM).mp3,audio/mp3,1011494,15/8/16 0:51,,,,
 143,lkwarrer-arrpwernenhe,noun,Channel-billed Cuckoo,,TRUE,16/4/16 4:21,16/4/16 6:27,channel-billed-cuckoo-aviceda-01.JPG,image/jpeg,209177,16/4/16 4:51,channel-billed-cuckoo-K.mp3,audio/mp3,352023,16/4/16 4:51,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
@@ -131,7 +131,7 @@ alternate_spellings: []
 alternate_translations:
 - Torresian Crow, Little Crow
 alternate_spellings: []
-",,"Ngankelepe aynenke weye, rlwene kape wantakerrertetye kwetyengele. Nganke nyartepe anteyane errwele ntyarlkwe kwereyengelke.","The crow eats just about every food scrap and little things it can find. This bird lives in a nest which is made from twigs, sticks and leaves.","Corvus orru, Corvus bennetti",,14_Torresian_Crow_(variation_of_'urgh').mp3,audio/mp3,736686,15/8/16 0:55,,,,
+",,"Ngankelepe aynenke weye, rlwene kape wantakerrertetye kwetyengele. Nganke nyartepe anteyane errwele ntyarlkwe kwereyengelke.","The crow eats just about every food scrap and little things it can find. This bird lives in a nest which is made from twigs, sticks and leaves.",Corvus orru,,14_Torresian_Crow_(variation_of_'urgh').mp3,audio/mp3,736686,15/8/16 0:55,,,,
 166,ngimarre,noun,Zebra Finch,,TRUE,15/8/16 0:57,15/8/16 0:57,waring-zebra-finch-01.jpg,image/jpeg,214382,15/8/16 0:57,zebra-finch-K.mp3,audio/mp3,189752,15/8/16 0:57,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
@@ -174,7 +174,7 @@ alternate_translations:
 - Red-kneed Dotterel, Black-fronted Dotterel
 alternate_spellings: []
 ",,,,"Erythrogonys cinctus, Elseyornis melanops",don't have call audio yet,,,,,,,,
-130,tyelkather-athere,noun,plover,,TRUE,16/4/16 4:21,16/4/16 6:55,banded-lapwing-julian-robinson.jpg,image/jpeg,112641,16/4/16 5:12,banded-lapwing-K.mp3,audio/mp3,189752,16/4/16 5:12,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+130,tyelkather-athere,noun,Banded Lapwing,,TRUE,16/4/16 4:21,16/4/16 6:55,banded-lapwing-julian-robinson.jpg,image/jpeg,112641,16/4/16 5:12,banded-lapwing-K.mp3,audio/mp3,189752,16/4/16 5:12,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations:
 - Banded Lapwing
 alternate_spellings: []
