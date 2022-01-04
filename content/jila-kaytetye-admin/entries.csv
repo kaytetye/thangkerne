@@ -1,189 +1,189 @@
 Id,Entry word,Word type,Translation,Description,Published?,Created at,Updated at,Image file name,Image content type,Image file size,Image updated at,Audio file name,Audio content type,Audio file size,Audio updated at,Extras,Display order,Sentence,Sentence translation,Scientific name,Admin only notes,Call audio file name,Call audio content type,Call audio file size,Call audio updated at,Sentence audio file name,Sentence audio content type,Sentence audio file size,Sentence audio updated at
-172,test,"","","",false,2017-03-23 07:24:15,2017-03-23 07:24:15,blue-tongue.gif,image/gif,222041,2017-03-23 07:24:13,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+148,aherrk-akwernenhe,noun,Singing honeyeater,,TRUE,16/4/16 4:21,10/8/17 13:24,waring-singing-honey-eater-01.jpg,image/jpeg,353876,16/4/16 4:45,singing-honeyeater-K.mp3,audio/mp3,267492,16/4/16 4:45,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
-",,"","","","",,,,,,,,
-170,tyewaketye,noun,Grey-crowned Babbler,"",true,2016-08-15 01:08:26,2016-08-15 01:08:26,grey-crowned-babbler-julian-robinson.jpg,image/jpeg,76064,2016-08-15 01:08:24,grey-crowned-babbler-K.mp3,audio/mp3,245430,2016-08-15 01:08:26,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Tyewaketye nyartepe thangkerne artetyele arre anenke. Thangkerne nyartepe errpwerle kape arltere. Tyewaketyelepe aynenke wantakerrertetye kelye-kelye.,This is a black and white bird which lives and can be found in the mulga country. This bird eats little insects that lives in mulga area.,Pomatostomus temporalis,"",3_Grey-crowned_Babbler_(rubeculus)(group_at_nest).mp3,audio/mp3,586220,2016-08-15 01:08:26,,,,
-169,therre-therre,noun,Willie Wagtail,"",true,2016-08-15 01:06:10,2016-08-15 01:06:10,WillWagtailYudumuMile301207003BG.JPG,image/jpeg,1920405,2016-08-15 01:06:07,willie-wagtail-K.mp3,audio/mp3,224952,2016-08-15 01:06:10,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Therre-therre nyartepe thangkerne kelye errpwerle kwenenge arnalke angkwerrepe arltere. Thangkerne nyartelepe aynenke wantakerrertetye kelye-kelye. Thangkerne nyartepe ntyarlkwele anteyane.,The willie wagtail is a little black bird with white under its chest. This bird eats grasshoppers and other little insects. Its home is a (hanging) nest up high in the branches.,Rhipidura leucophrys,"",18_Willie_Wagtail_(leucophrys)(song___chitter).mp3,audio/mp3,1080457,2016-08-15 01:06:10,,,,
-168,rtwere,noun,Red-backed Kingfisher,"",true,2016-08-15 01:03:41,2016-08-15 01:03:41,rtwere_BG.JPG,image/jpeg,1918048,2016-08-15 01:03:38,red-backed-kingfisher-K.mp3,audio/mp3,240325,2016-08-15 01:03:41,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Rtwere angkenke awennngarre angenke ketye.,When the kingfisher sings it's telling you to dig a grave.,Todiramphus pyrrhopygius,"",17_Red-backed_Kingfisher_('keeurp'_-_advertising_call).mp3,audio/mp3,1106580,2016-08-15 01:03:41,,,,
-167,pwelerrnge,noun,Southern Boobook,"",true,2016-08-15 01:01:04,2016-08-15 01:01:04,southern-boobook-julian-robinson.jpg,image/jpeg,134397,2016-08-15 01:01:03,southern-boobook-K.mp3,audio/mp3,245848,2016-08-15 01:01:04,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Pwelerrngepe thangkerne ware elpalhapenye, rlwe atherrepe alkenhe. Thangkerne nyartepe atnkwarengele aperrane. Pwelerrngelepe aynenke ilkwennge, kape wantakekerretetye kelye-kelye atnkwarenge, aperrane.",The southern boobook owl is a grey bird with big eyes; it hunts for food at night. This bird eats mice and other little animals and insects that come out at night.,Ninox novaeseelandiae,"",16_Southern_Boobook_(two_birds_calling).mp3,audio/mp3,861029,2016-08-15 01:01:04,,,,
-166,ngimarre,noun,Zebra Finch,"",true,2016-08-15 00:57:48,2016-08-15 00:57:48,waring-zebra-finch-01.jpg,image/jpeg,214382,2016-08-15 00:57:46,zebra-finch-K.mp3,audio/mp3,189752,2016-08-15 00:57:48,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Ngimarrepe thangkerne kelye arlkenye kape intetyeng-intetye. Ngimarrelepe aynenke nterrenge kape arntwe kwathenke. Ahepertewepe ngimarrepe arenke makwerle arntwe warle karrarrenke ngewarlengarle ngentye arle. Thangkerne nyartepe ntyarlkwele anteyane, arwe",The zebra finch is a little bird which has spots and stripes. It eats seeds and drinks water. In the summer months you can see the zebra finch in flocks of hundreds gathering to one waterhole. This bird lives in a nest high up in trees which it makes out ,Taeniopygia guttata,"",15_Zebra_Finch_(flock_near_waterhole).mp3,audio/mp3,705339,2016-08-15 00:57:48,,,,
-165,nganke,noun,crow,"",true,2016-08-15 00:55:06,2016-08-15 00:55:06,waring-torresian-crow-01.jpg,image/jpeg,206599,2016-08-15 00:54:58,torresian-crow-K.mp3,audio/mp3,172234,2016-08-15 00:55:06,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations:
-- Torresian Crow, Little Crow
-alternate_spellings: []
-",,"Ngankelepe aynenke weye, rlwene kape wantakerrertetye kwetyengele. Nganke nyartepe anteyane errwele ntyarlkwe kwereyengelke.","The crow eats just about every food scrap and little things it can find. This bird lives in a nest which is made from twigs, sticks and leaves.","Corvus orru, Corvus bennetti","",14_Torresian_Crow_(variation_of_'urgh').mp3,audio/mp3,736686,2016-08-15 00:55:06,,,,
-164,kwerte-kwerte,noun,Spotted Nightjar,"",true,2016-08-15 00:51:22,2016-08-15 00:51:22,spotted-nightjar-patrick-coin.jpg,image/jpeg,86120,2016-08-15 00:51:21,spotted-nightjar-K.mp3,audio/mp3,150976,2016-08-15 00:51:21,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Kwerte-kwerte nyartepe thangkerne errpwerle kape arne apenye intetyeng-intetye. Thangkerne nyartepe arlpankele arwelele anteyane kape athenge tyampe. Thangkerne nyartelepe aynenke perrkaltye, ayepayte kape nterrenge. Atnkwarengele angkenke kwerte-kwerte k","The nightjar is a black bird with brown spots. This bird lives on the plains or under trees and grass. It eats grasshoppers, caterpillars and seeds. At night it calls kwerte-kwerte, kwerte-kwerte, kwerte-kwerte.",Eurostopodus argus,"",25_Spotted_Nightjar_(advertising_call_-_AM).mp3,audio/mp3,1011494,2016-08-15 00:51:21,,,,
-163,akngkwene,noun,Major Mitchell's Cockatoo,"",true,2016-08-15 00:41:13,2016-08-15 00:41:13,major-mitchell-cockatoo-julian-robinson-01.jpg,image/jpeg,138493,2016-08-15 00:41:11,major-mitchells-cockatoo-K.mp3,audio/mp3,305109,2016-08-15 00:41:13,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Akngkwenelepe aynenke nterrenge arwele arenye kape athe arenye. Thangkerne nyartepe arltere paympelhe errwelenge, kwenengepe rntere-rntere. Thangkerne nyartepe arlpankele anteyane kwarte akake kape akwerrke akakepe anenke arwele ilperele. Nyartepe thangke","The Major Mitchell's cockatoo eats seeds from trees, plants and grass. It has white feathers and its wings are white over the top, but red or dark pink down the bottom. It lives in the plains and only nests in a tree hollow when it has eggs or babies. Thi",Cacatua leadbeateri,"",37_Major_Mitchell's_Cockatoo_(two_adults_calling).mp3,audio/mp3,718922,2016-08-15 00:41:13,,,,
-162,tyengaytey-ayteye,noun,Pallid Cuckoo,"",true,2016-08-15 00:36:27,2016-08-15 00:36:27,Pallid_Cuckoo_2013_06_13_Frederick_Blakeley_memorial_01.jpg,image/jpeg,285379,2016-08-15 00:36:25,pallid-cuckoo-K.mp3,audio/mp3,305945,2016-08-15 00:36:26,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Ilalthewe aherlaynterane tyengayteyayteyele. Tyengayteyayteye errelewe aharlaynterane. Lwematnewethe atherrkenyele.,The pallid cuckoo tells you when march flies are around. The pallid cuckoo hollers that all the grasses will be green.,Cacomantis pallidus,"",26_Pallid_Cuckoo_(AM_-_advertising_call).mp3,audio/mp3,1064784,2016-08-15 00:36:26,,,,
-160,kwerlekweke,noun,Diamond dove,"",true,2016-04-16 04:22:28,2016-04-16 05:19:07,Diamond_Dove_01.jpg,image/jpeg,174019,2016-04-16 04:25:47,diamond-dove-K.mp3,audio/mp3,198529,2016-04-16 04:34:01,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Thangkerne kwerlekwekele ngkenge ntyerrelewepe arntwarle tywengerlenke angkere.,This bird the diamond dove can show you the way to water when you are thirsty.,Geopelia cuneata,"",13_Diamond_Dove_('coo-cooo-o-my-papa'_-_advertising).mp3,audio/mp3,1062694,2016-04-16 05:19:07,,,,
-159,kelelkelelke,noun,Galah,"",true,2016-04-16 04:22:28,2016-08-15 00:28:31,waring-Galahs 2012_08_13 01.jpg,image/jpeg,196020,2016-04-16 04:29:41,galah-K.mp3,audio/mp3,169367,2016-04-16 04:34:48,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Kelelkelelkepe thangkerne ware elpalhapenye kape rntere-rntere. Thangkerne nyartelepe aynenke nterrenge athe arenye kape arwele arenye. Thangkerne nyartepe anteyane arwele ilperele, kape nyartepe weye ahene aynewethe.","The galah is a grey and pink bird. It eats seed from grass, plants and trees and nests in tree hollows. It is good to eat.",Cacatua roseicapilla,"",40_Galah_(several_calling).mp3,audio/mp3,980147,2016-04-16 05:19:50,,,,
-158,karlatwerreye,noun,Red-capped robin,"",true,2016-04-16 04:22:28,2016-04-16 06:06:38,Red-capped_Robin_2013_06_13_Frederick_Blakeley_memorial_02.jpg,image/jpeg,256527,2016-04-16 04:32:00,red-capped-robin-K.mp3,audio/mp3,180653,2016-04-16 04:52:00,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Karlartwerreye arenkerne wele artweye arenge enke kngwere angkwarre apewethe.,"If you see this bird you know to go the other way, because this bird is found near kurdaitchas.",Petroica goodenovii,"",24_Red-capped_Robin_(AM_-_song).mp3,audio/mp3,857894,2016-04-16 06:06:38,,,,
-157,ilpertenye,noun,Wedge-tailed eagle,"",true,2016-04-16 04:22:28,2016-04-16 06:08:35,ilpertenye_BG.jpg,image/jpeg,291599,2016-04-16 04:35:42,wedge-tailed-eagle-K.mp3,audio/mp3,240325,2016-04-16 04:35:43,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Ilpertenyepe thangkerne errpwerle alkenhe intetyeng-intetye arltere kape aherne apenye. Thangkerne nyartepe weye aynewene. Ilpertenyelepe weye kwereyenge alarrenke aherre, arinenge, kaperle, arlewatyerre kape thangkerne kelye-kelye.","The wedge-tailed eagle is a big black bird with little spots of white and brown. The eagle is a meat-eater which hunts and kills on its own. It eats kangaroos, euro, lizards, goannas and other small birds.",Aquila audax,"",23_Wedge-tailed_Eagle_(calling_overhead).mp3,audio/mp3,1043886,2016-04-16 06:08:04,,,,
-156,ilere,noun,curlew,"",true,2016-04-16 04:22:28,2016-04-16 06:10:28,waring-bush-stone-curlew-01.jpg,image/jpeg,332357,2016-04-16 04:36:36,bush-stone-curlew-K.mp3,audio/mp3,330604,2016-04-16 04:36:42,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations:
-- Bush Stone-curlew
-alternate_spellings: []
-",,"Ilerepe thangkerne arwengerrpe apenye. Repe aynenke perrkaltye, ayepayte kape wantakerrertetye. Ilere nyartepe thangkerne errpatye.","The curlew looks a bit like the bush turkey. It eats grasshoppers, grubs and other insects. This bird brings bad luck.",Burhinus grallarius,"",22_Bush_Stone-curlew_(loud_wailing_-_night).mp3,audio/mp3,798335,2016-04-16 06:10:28,,,,
-155,ilekaynewene,noun,Red-tailed Black Cockatoo,"",true,2016-04-16 04:22:28,2016-04-16 06:11:25,Red-tailed_Black_Cockatoo_Group_Above_03.jpg,image/jpeg,102608,2016-04-16 04:37:54,red-tailed-black-cockatoo-K.mp3,audio/mp3,310542,2016-04-16 04:37:55,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Atye arenherre ilekaynewene rntere-rntere akake. Enye kwereyenge rtame, ilekepe. Ilekaynewene rtame re.","I saw a red-tailed black cockatoo, a male one (with red feathers). Prickles are its tucker. It's a prickle-eater.",Calyptorhynchus banksii,"",38_Red-tailed_Black-Cockatoo_(adults_and_juveniles).mp3,audio/mp3,1221518,2016-04-16 06:11:25,,,,
-154,aympaympe,noun,Yellow-throated miner,"",true,2016-04-16 04:22:28,2016-08-12 02:48:22,waring-yellow-throated-miner-01.jpg,image/jpeg,81536,2016-04-16 04:38:58,yellow-throated-miner.mp3,audio/mp3,261663,2016-08-12 02:48:22,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Aympaympepe thangkerne ahene aynewethe. Thangkerne nyartelepe aynenke perrkaltye kape wantakerrertetye kelye-kelye. Thangkerne nyartepe anteyane ntyarlkwele errwele.,The yellow-throated miner is good to eat. It lives on grasshoppers and other little insects. This bird lives in a nest which is up in the hanging branches.,Manorina flavigula,"",12_Yellow-throated_Miner_(wayensis)(various_calls_of_group).mp3,audio/mp3,993731,2016-04-16 06:12:27,,,,
-153,arrakwer-akwere,noun,Spiny-cheeked Honeyeater,"",true,2016-04-16 04:22:28,2016-04-16 06:13:36,spiny-cheeked-honeyeater-julian-robinson.jpg,image/jpeg,170070,2016-04-16 04:39:59,spiny-cheeked-honeyeater-K.mp3,audio/mp3,175959,2016-04-16 04:40:00,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Thangkerne arrakwer-akwerele ahakeye anthwerrke artntwenke. Arrakwerakwere angkerranenke artety-artetyele.,The spiny-cheeked honeyeater lets people know when the native currants are ripe. It can be heard singing in mulga country.,Acanthagenys rugogularis,"",11_Spiny-cheeked_Honeyeater_(variable_song).mp3,audio/mp3,1101355,2016-04-16 06:13:36,,,,
-152,arlpatye,noun,ringneck parrot,"",true,2016-04-16 04:22:28,2016-08-15 00:29:00,waring-australian-ringneck-01.jpg,image/jpeg,271154,2016-04-16 04:40:49,australian-ringneck-K.mp3,audio/mp3,156733,2016-04-16 04:40:50,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations:
-- Australian Ringneck
-alternate_spellings: []
-",,Arlpatye thangkerne weye ahene aynewethe. Thangkerne nyartepe atherrk-atherrke iterrtyepe akepe errpwerle rtame. Thangkerne nyartelepe aynenke nterrenge athe kape arwele arenye.,"The ringneck parrot is a bird that is good to eat. It has a green body and a black head. It eats seeds from grass, plants and trees.",Barnardius zonarius,"",10_Australian_Ringneck_(call_while_perched_and_flying).mp3,audio/mp3,577861,2016-04-16 06:15:08,,,,
-151,aleterrpe-terrpe,noun,Rufous whistler,"",true,2016-04-16 04:22:28,2016-04-16 06:16:51,waring-rufous-whistler-01.jpg,image/jpeg,307409,2016-04-16 04:42:23,rufous-whistler-K.mp3,audio/mp3,500714,2016-04-16 04:42:24,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Aleterrpeterrpe, nyartepe thangkerne kelye, repe kwake kelye arne arle mpwarenke antywalke arwelele etntete warle repe anteyane. Thangkerne nyartepe intetyeng-intetye akepe kape paympelhe atherre, arnalkepe marlalperre, kape rntere-rntere.",The rufous whistler is a small bird that makes its small nest in tree branches. This bird has speckled feathers on its head and wings and its breast is yellow and red.,Pachycephala rufiventris,"",21_Rufous_Whistler_(rufiventris)(song).mp3,audio/mp3,1203755,2016-04-16 06:16:51,,,,
-149,kwarlpatelk-alyelkelye,noun,Striated pardalote,"",true,2016-04-16 04:21:33,2016-04-16 06:18:10,waring-striated-pardalote-01.jpg,image/jpeg,219992,2016-04-16 04:43:27,striated-pardalote-K.mp3,audio/mp3,150882,2016-04-16 04:43:28,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"","",Pardalotus striatus,"",39_Striated_Pardalote_(uropygialis)(song).mp3,audio/mp3,528751,2016-04-16 06:18:10,,,,
-148,aherrk-akwernenhe,noun,Singing honeyeater,"",true,2016-04-16 04:21:33,2017-08-10 13:24:20,waring-singing-honey-eater-01.jpg,image/jpeg,353876,2016-04-16 04:45:42,singing-honeyeater-K.mp3,audio/mp3,267492,2016-04-16 04:45:43,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Thangkerne aherrk-akwernenhe aherrkarle kwerrantye atwerrpe. Ngkwarle therrpere ane tharrkare re kwatherrantye.,The singing honeyeater sings in the afternoon to make the sun go down. It sucks honey from the honey grevillea and the turkey bush.,Lichenostomus virescens,"",20_Singing_Honeyeater_(forresti)(soft_contact___two_'prip'_calls.mp3,audio/mp3,596669,2016-04-16 06:19:05,,,,
-147,pelkere,noun,Crested Pigeon,"",true,2016-04-16 04:21:33,2016-08-15 00:58:30,waring-crested-pigeon-01.jpg,image/jpeg,243561,2016-04-16 04:47:12,crested-pigeon-K.mp3,audio/mp3,329350,2016-04-16 04:47:13,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Pelkerepe thangkerne ahene aynewethe. Thangkerne nyartelepe aynenke nterrenge athe arenye kape arwele arenye. Pelkere nyartepe ware elpalhapenye, rlterre rntere-rntere kape arrkaylpe akake akenge arlenge.",The crested pigeon is good to eat. This bird eats seeds from grass and plants. It is a grey bird with red legs and has a crest on its head.,Ocyphaps lophotes,"",28_Crested_Pigeon_(courtship_-_'k-wooh'_repeated).mp3,audio/mp3,797290,2016-04-16 06:20:23,,,,
-146,kwepalepale,noun,Crested Bellbird,"",true,2016-04-16 04:21:33,2016-04-16 06:21:29,waring-crested-bellbird-01.jpg,image/jpeg,460512,2016-04-16 04:48:09,crested-bellbird-K.mp3,audio/mp3,149722,2016-04-16 04:48:10,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Artetyele anteyane repe kwepalepale ape.,Bellbirds live in mulga country.,Oreoica gutturalis,"",2_Crested_Bellbird_(pallescens)(AM_-_song).mp3,audio/mp3,1253910,2016-04-16 06:21:29,,,,
-145,arntepe,noun,Common Bronzewing,"",true,2016-04-16 04:21:33,2016-08-15 00:28:00,common-bronzewing-julian-robinson.jpg,image/jpeg,122668,2016-04-16 04:49:01,common-bronzewing-K.mp3,audio/mp3,210232,2016-04-16 04:49:01,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Arntepepe thangkerne weye ahene aynewethe.  Thangkerne arntepele aynenke nterrenge athe arenye.,The bronzewing pigeon is good to eat. It eats grass seeds.,Phaps chalcoptera,"",1_Common_Bronzewing_(advertising_-_low_pitched_'oom'_repeated).mp3,audio/mp3,835951,2016-04-16 06:23:39,,,,
-144,karnawilkere,noun,Cockatiel,"",true,2016-04-16 04:21:33,2016-04-16 06:26:04,cockatiel-craig-nieminski.jpg,image/jpeg,231117,2016-04-16 06:25:45,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Karnawilkere elpaye arenye. Nharte anteyane arwelele. Atnwenthepe kwere ayneyayne arrwekelenyele ilperewe alarreyayne karnawilkwere.,"The cockatiel lives at the creek. It stays in trees. In the early days people ate the cockatiel, killing them in hollow trees",Nymphicus hollandicus,No call for this bird yet MC 15/APR/2016,,,,,,,,
-143,lkwarrer-arrpwernenhe,noun,Channel-billed Cuckoo,"",true,2016-04-16 04:21:33,2016-04-16 06:27:02,channel-billed-cuckoo-aviceda-01.JPG,image/jpeg,209177,2016-04-16 04:51:11,channel-billed-cuckoo-K.mp3,audio/mp3,352023,2016-04-16 04:51:13,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,Thangkerne lkwarrer-arrpwernenhe elpathenke kwere ahelaytnenkarle wele aynanthe etelarenke arntwe alkenhe rtame re aperninenke.,When the channel-billed cuckoo is heard calling we know that it will bring big rains.,Scythrops novaehollandiae,"",6_Channel-billed_Cuckoo_('awk'_calls_-_two_birds_perched).mp3,audio/mp3,856849,2016-04-16 06:27:02,,,,
-142,arwengerrpe,noun,bush turkey,"",true,2016-04-16 04:21:33,2016-08-15 00:29:44,waring-australian-bustard-01.jpg,image/jpeg,163218,2016-04-16 04:52:55,australian-bustard-K.mp3,audio/mp3,202709,2016-04-16 04:52:55,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations:
-- Australian Bustard
-alternate_spellings: []
-",,"Arwengerrpe weye malangke. Arwengerrpelepe aynenke perrkaltye, ayepayte arlkerre, arnewetye kape wantakerrertetye kelye-kelye. ","The bush turkey is the nicest meat that can be found in the bush. The bush turkey eats grasshoppers, caterpillars, conkerberries, desert raisins and other little insects.",Ardeotis australis,"",4_Australian_Bustard_('huff'_and_roar).mp3,audio/mp3,814008,2016-04-16 06:28:23,,,,
-141,atetherre,noun,Budgerigar,"",true,2016-04-16 04:21:33,2016-08-15 00:30:03,waring-budgerigar-01.jpg,image/jpeg,204791,2016-04-16 04:53:57,Budgerigar-K.mp3,audio/mp3,334366,2016-04-16 04:53:59,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Thangkerne atetherrele aynenke nterrenge athe kape arwele arenye. Atetherrepe anteyane arwele ilperrele, thangkerne nyartepe ahene aynewethe.",The budgerigar eats seed from grass and plants. This bird lives in tree hollows and it is also good to eat.,Melopsittacus undulatus,"",31_Budgerigar_(small_flock_perched).mp3,audio/mp3,806694,2016-04-16 06:29:23,,,,
-140,kerrkerlantye,noun,Brown Falcon,"",true,2016-04-16 04:21:33,2016-04-16 06:30:17,waring-brown-falcon-01.jpg,image/jpeg,243292,2016-04-16 04:54:53,brown-falcon-K.mp3,audio/mp3,200619,2016-04-16 04:54:54,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations: []
-alternate_spellings: []
-",,"Kerrkerlantyepe thangkerne weye aynewene, repe aynenke kaperle, perrkaltye, ayepayte kape wantakerrertetye kelye-kelye. Thangkerne nyartepe iterrtye kape ake errpwerle arnalke arltere.","This bird is a meat-eater that eats lizards, grasshoppers, caterpillars and other insects. It has a black head and body with a white chest.",Falco berigora,"",5_Brown_Falcon_(calling_near_nest).mp3,audio/mp3,805649,2016-04-16 06:30:17,,,,
-139,akerrke,noun,bowerbird,"",true,2016-04-16 04:21:33,2016-04-16 06:31:22,Western_Bowerbird_2013_05_17_Simpsons_Gap_02.jpg,image/jpeg,484230,2016-04-16 04:55:55,akerrke-K.mp3,audio/mp3,452230,2016-04-16 04:55:57,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,Thangkerne aherrk-akwernenhe aherrkarle kwerrantye atwerrpe. Ngkwarle therrpere ane tharrkare re kwatherrantye.,The singing honeyeater sings in the afternoon to make the sun go down. It sucks honey from the honey grevillea and the turkey bush.,Lichenostomus virescens,,20_Singing_Honeyeater_(forresti)(soft_contact___two_'prip'_calls.mp3,audio/mp3,596669,16/4/16 6:19,,,,
+139,akerrke,noun,bowerbird,,TRUE,16/4/16 4:21,16/4/16 6:31,Western_Bowerbird_2013_05_17_Simpsons_Gap_02.jpg,image/jpeg,484230,16/4/16 4:55,akerrke-K.mp3,audio/mp3,452230,16/4/16 4:55,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations:
 - Western Bowerbird
 alternate_spellings: []
-",,"Akerrke nyartepe thangkerne ngkerte wantakerrertetye arle twerarte tyepetye ilerrantye antywe kwereyenge arle arrewethe, arreyewe theye aperte arrel-arrel-arrenkepe ntyarlkwe warle atheke kwene.",The naughty bower bird takes everything such as leftovers to his home and puts them there. He starts to decorate around the entrance to his nest and then works his way down to the main part of the nest.,Chlamydera guttata,"",29_Western_Bowerbird_(churrs_at_bower).mp3,audio/mp3,1082547,2016-04-16 06:31:22,,,,
-138,karlayteng-aytenge,noun,native hen,"",true,2016-04-16 04:21:33,2016-04-16 06:41:19,Black-tailed_Native_Hen-waring.jpg,image/jpeg,333716,2016-04-16 06:41:17,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations:
-- Black-tailed Native Hen
+",,"Akerrke nyartepe thangkerne ngkerte wantakerrertetye arle twerarte tyepetye ilerrantye antywe kwereyenge arle arrewethe, arreyewe theye aperte arrel-arrel-arrenkepe ntyarlkwe warle atheke kwene.",The naughty bower bird takes everything such as leftovers to his home and puts them there. He starts to decorate around the entrance to his nest and then works his way down to the main part of the nest.,Chlamydera guttata,,29_Western_Bowerbird_(churrs_at_bower).mp3,audio/mp3,1082547,16/4/16 6:31,,,,
+163,akngkwene,noun,Major Mitchell's Cockatoo,,TRUE,15/8/16 0:41,15/8/16 0:41,major-mitchell-cockatoo-julian-robinson-01.jpg,image/jpeg,138493,15/8/16 0:41,major-mitchells-cockatoo-K.mp3,audio/mp3,305109,15/8/16 0:41,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
 alternate_spellings: []
-",,Thangkerne nharte arntwarenye. Awatnkakerre iterrtyele aynenye.,The black-tailed native hen is a waterbird. It was eaten in the olden days.,Gallinula ventralis,"",96_Black-tailed_Native-hen_(group_calls).mp3,audio/mp3,533975,2016-04-16 06:41:19,,,,
-137,alpantywerle,noun,woodswallow,"",true,2016-04-16 04:21:33,2016-04-16 06:42:29,Masked_WswallowAspDesPkBG*.jpg,image/jpeg,3155943,2016-04-16 04:59:08,masked-woodswallow-K.mp3,audio/mp3,209814,2016-04-16 05:01:30,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,"Akngkwenelepe aynenke nterrenge arwele arenye kape athe arenye. Thangkerne nyartepe arltere paympelhe errwelenge, kwenengepe rntere-rntere. Thangkerne nyartepe arlpankele anteyane kwarte akake kape akwerrke akakepe anenke arwele ilperele. Nyartepe thangke","The Major Mitchell's cockatoo eats seeds from trees, plants and grass. It has white feathers and its wings are white over the top, but red or dark pink down the bottom. It lives in the plains and only nests in a tree hollow when it has eggs or babies. Thi",Cacatua leadbeateri,,37_Major_Mitchell's_Cockatoo_(two_adults_calling).mp3,audio/mp3,718922,15/8/16 0:41,,,,
+151,aleterrpe-terrpe,noun,Rufous whistler,,TRUE,16/4/16 4:22,16/4/16 6:16,waring-rufous-whistler-01.jpg,image/jpeg,307409,16/4/16 4:42,rufous-whistler-K.mp3,audio/mp3,500714,16/4/16 4:42,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Aleterrpeterrpe, nyartepe thangkerne kelye, repe kwake kelye arne arle mpwarenke antywalke arwelele etntete warle repe anteyane. Thangkerne nyartepe intetyeng-intetye akepe kape paympelhe atherre, arnalkepe marlalperre, kape rntere-rntere.",The rufous whistler is a small bird that makes its small nest in tree branches. This bird has speckled feathers on its head and wings and its breast is yellow and red.,Pachycephala rufiventris,,21_Rufous_Whistler_(rufiventris)(song).mp3,audio/mp3,1203755,16/4/16 6:16,,,,
+137,alpantywerle,noun,"Masked Woodswallow, Black-faced Woodswallow",,TRUE,16/4/16 4:21,16/4/16 6:42,Masked_WswallowAspDesPkBG*.jpg,image/jpeg,3155943,16/4/16 4:59,masked-woodswallow-K.mp3,audio/mp3,209814,16/4/16 5:01,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations:
 - Masked Woodswallow, Black-faced Woodswallow
 alternate_spellings: []
-",,Alpantywerle nyartepe thangkerne weye ahene aynewethe. Thangkerne nyartepe artetyele arre anteyane repe aynenke nterrenge kape ngkwerrme kape aytankerne. Yerrampe re errwelaylenke.,The woodswallow is good to eat. It lives in mulga country. It eats seeds and misletoes and berries that grow on mulga trees. It brings honeyants closer to the surface.,"Artamus personatus, Artamus cinereus","",35_Masked_Woodswallow_(flock_-_flying_overhead).mp3,audio/mp3,512033,2016-04-16 06:42:29,,,,
-136,amatheng-amathenge,noun,Black-faced Cuckoo Shrike,"",true,2016-04-16 04:21:33,2016-04-16 06:43:21,black-faced-cuckoo-shrike-julian-robinson.jpg,image/jpeg,145170,2016-04-16 05:02:30,black-faced-cuckoo-shrike-K.mp3,audio/mp3,162167,2016-04-16 05:02:31,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,Alpantywerle nyartepe thangkerne weye ahene aynewethe. Thangkerne nyartepe artetyele arre anteyane repe aynenke nterrenge kape ngkwerrme kape aytankerne. Yerrampe re errwelaylenke.,The woodswallow is good to eat. It lives in mulga country. It eats seeds and misletoes and berries that grow on mulga trees. It brings honeyants closer to the surface.,"Artamus personatus, Artamus cinereus",,35_Masked_Woodswallow_(flock_-_flying_overhead).mp3,audio/mp3,512033,16/4/16 6:42,,,,
+136,amatheng-amathenge,noun,Black-faced Cuckoo Shrike,,TRUE,16/4/16 4:21,16/4/16 6:43,black-faced-cuckoo-shrike-julian-robinson.jpg,image/jpeg,145170,16/4/16 5:02,black-faced-cuckoo-shrike-K.mp3,audio/mp3,162167,16/4/16 5:02,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
-",,Thangkerne amatheng-amathenge atnentye errpwerle arlkepe elpalhapenye. Artnwengele areme ketye amathengele paperte kwere arenke.,The black-faced cuckoo-shrike has a black throat and a grey body. If children see this bird they might become orphans.,Coracina novaehollandiae,"",36_Black-faced_Cuckoo-shrike(melanops)(churring_calls_-_interact.mp3,audio/mp3,772212,2016-04-16 06:43:21,,,,
-135,twetime,noun,Black-breasted Buzzard,"",true,2016-04-16 04:21:33,2016-04-16 06:44:30,waring-black-breasted-buzzard-01.jpg,image/jpeg,252405,2016-04-16 05:03:27,black-breasted-buzzard-K.mp3,audio/mp3,243251,2016-04-16 05:03:29,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,Thangkerne amatheng-amathenge atnentye errpwerle arlkepe elpalhapenye. Artnwengele areme ketye amathengele paperte kwere arenke.,The black-faced cuckoo-shrike has a black throat and a grey body. If children see this bird they might become orphans.,Coracina novaehollandiae,,36_Black-faced_Cuckoo-shrike(melanops)(churring_calls_-_interact.mp3,audio/mp3,772212,16/4/16 6:43,,,,
+152,arlpatye,noun,Australian Ringneck,,TRUE,16/4/16 4:22,15/8/16 0:29,waring-australian-ringneck-01.jpg,image/jpeg,271154,16/4/16 4:40,australian-ringneck-K.mp3,audio/mp3,156733,16/4/16 4:40,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations:
+- Australian Ringneck
+alternate_spellings: []
+",,Arlpatye thangkerne weye ahene aynewethe. Thangkerne nyartepe atherrk-atherrke iterrtyepe akepe errpwerle rtame. Thangkerne nyartelepe aynenke nterrenge athe kape arwele arenye.,"The ringneck parrot is a bird that is good to eat. It has a green body and a black head. It eats seeds from grass, plants and trees.",Barnardius zonarius,,10_Australian_Ringneck_(call_while_perched_and_flying).mp3,audio/mp3,577861,16/4/16 6:15,,,,
+145,arntepe,noun,Common Bronzewing,,TRUE,16/4/16 4:21,15/8/16 0:28,common-bronzewing-julian-robinson.jpg,image/jpeg,122668,16/4/16 4:49,common-bronzewing-K.mp3,audio/mp3,210232,16/4/16 4:49,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
-",,"Twetime rartepe errwelenge aperrane, wele arenke rtame kwere iterrtyelepe, 'twetime nharte errwele fly-arrerrane, repe arrere apeke nthepelarte aperrane' mpele. Antenge theye rtame, atnhelengkwepe.",When we see the black-breasted buzzard flying high in the sky we know that emus are close behind.,Hamirostra melanosternon,"",8_Black-breasted_Buzzard_(AM_-_perched_with_nest_nearby).mp3,audio/mp3,572637,2016-04-16 06:44:30,,,,
-134,etnkwele,noun,kite,"",true,2016-04-16 04:21:33,2016-04-16 06:45:25,waring-black-kite-02.jpg,image/jpeg,161645,2016-04-16 05:05:24,black-kite-K.mp3,audio/mp3,212007,2016-04-16 05:05:29,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,Arntepepe thangkerne weye ahene aynewethe.  Thangkerne arntepele aynenke nterrenge athe arenye.,The bronzewing pigeon is good to eat. It eats grass seeds.,Phaps chalcoptera,,1_Common_Bronzewing_(advertising_-_low_pitched_'oom'_repeated).mp3,audio/mp3,835951,16/4/16 6:23,,,,
+153,arrakwer-akwere,noun,Spiny-cheeked Honeyeater,,TRUE,16/4/16 4:22,16/4/16 6:13,spiny-cheeked-honeyeater-julian-robinson.jpg,image/jpeg,170070,16/4/16 4:39,spiny-cheeked-honeyeater-K.mp3,audio/mp3,175959,16/4/16 4:40,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Thangkerne arrakwer-akwerele ahakeye anthwerrke artntwenke. Arrakwerakwere angkerranenke artety-artetyele.,The spiny-cheeked honeyeater lets people know when the native currants are ripe. It can be heard singing in mulga country.,Acanthagenys rugogularis,,11_Spiny-cheeked_Honeyeater_(variable_song).mp3,audio/mp3,1101355,16/4/16 6:13,,,,
+133,arrkarre,noun,Barn Owl,,TRUE,16/4/16 4:21,16/4/16 6:46,waring-barn-owl-01.jpg,image/jpeg,128056,16/4/16 5:06,barn-owl-K.mp3,audio/mp3,185154,16/4/16 5:06,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Arrkarrepe thangkerne pwelerrnge apenye. Thangkerne nyartepe anteyane arwele ilperrele. Arrkarrelepe aynenke wantakerrertetye kelye-kelye atnkwarengele aperrane.,"The barn owl looks like the southern boobook. It lives or nests in tree hollows. It eats animals and insects that come out at night including mice, grasshoppers and other small insects.",Tyto javanica,,30_Eastern_Barn_Owl_(harsh_'psssh'_-_perched).mp3,audio/mp3,812963,16/4/16 6:46,,,,
+142,arwengerrpe,noun,"Australian Bustard, bush turkey",,TRUE,16/4/16 4:21,15/8/16 0:29,waring-australian-bustard-01.jpg,image/jpeg,163218,16/4/16 4:52,australian-bustard-K.mp3,audio/mp3,202709,16/4/16 4:52,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations:
+- Australian Bustard
+alternate_spellings: []
+",,"Arwengerrpe weye malangke. Arwengerrpelepe aynenke perrkaltye, ayepayte arlkerre, arnewetye kape wantakerrertetye kelye-kelye. ","The bush turkey is the nicest meat that can be found in the bush. The bush turkey eats grasshoppers, caterpillars, conkerberries, desert raisins and other little insects.",Ardeotis australis,,4_Australian_Bustard_('huff'_and_roar).mp3,audio/mp3,814008,16/4/16 6:28,,,,
+141,atetherre,noun,Budgerigar,,TRUE,16/4/16 4:21,15/8/16 0:30,waring-budgerigar-01.jpg,image/jpeg,204791,16/4/16 4:53,Budgerigar-K.mp3,audio/mp3,334366,16/4/16 4:53,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Thangkerne atetherrele aynenke nterrenge athe kape arwele arenye. Atetherrepe anteyane arwele ilperrele, thangkerne nyartepe ahene aynewethe.",The budgerigar eats seed from grass and plants. This bird lives in tree hollows and it is also good to eat.,Melopsittacus undulatus,,31_Budgerigar_(small_flock_perched).mp3,audio/mp3,806694,16/4/16 6:29,,,,
+154,aympaympe,noun,Yellow-throated Miner,,TRUE,16/4/16 4:22,12/8/16 2:48,waring-yellow-throated-miner-01.jpg,image/jpeg,81536,16/4/16 4:38,yellow-throated-miner.mp3,audio/mp3,261663,12/8/16 2:48,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Aympaympepe thangkerne ahene aynewethe. Thangkerne nyartelepe aynenke perrkaltye kape wantakerrertetye kelye-kelye. Thangkerne nyartepe anteyane ntyarlkwele errwele.,The yellow-throated miner is good to eat. It lives on grasshoppers and other little insects. This bird lives in a nest which is up in the hanging branches.,Manorina flavigula,,12_Yellow-throated_Miner_(wayensis)(various_calls_of_group).mp3,audio/mp3,993731,16/4/16 6:12,,,,
+126,eleterre-kame-kame,noun,Australian Kestrel,,FALSE,16/4/16 4:21,16/4/16 5:16,,,,,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Thangkerne eleterrekamekamele errwelarle etnherrantye alkerele. Ertntweyane re apwelhe apenye.,The Australian kestrel hovers high in the sky. It dances like women during initiation ceremonies,Falco cenchroides,,,,,,,,,
+134,etnkwele,noun,kite,,TRUE,16/4/16 4:21,16/4/16 6:45,waring-black-kite-02.jpg,image/jpeg,161645,16/4/16 5:05,black-kite-K.mp3,audio/mp3,212007,16/4/16 5:05,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations:
 - Black Kite, Whistling Kite
 alternate_spellings: []
-",,"Etnkwelepe thangkerne ware elpalhapenye kape aherne apenye. Thangkerne nyartepe weye aynewethe, repe aynenke kaperle, perrkaltye kape wantakerrertetye kelye-kelye.","The kite is a grey and brown bird. It is a meat-eater that eats lizards, grasshoppers and other lizards and insects.","Milvus migrans, Haliastur sphenurus","",27_Black_Kite_(adult_-_trill-whistle)).mp3,audio/mp3,1027167,2016-04-16 06:45:24,,,,
-133,arrkarre,noun,Barn Owl,"",true,2016-04-16 04:21:33,2016-04-16 06:46:52,waring-barn-owl-01.jpg,image/jpeg,128056,2016-04-16 05:06:25,barn-owl-K.mp3,audio/mp3,185154,2016-04-16 05:06:27,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,"Etnkwelepe thangkerne ware elpalhapenye kape aherne apenye. Thangkerne nyartepe weye aynewethe, repe aynenke kaperle, perrkaltye kape wantakerrertetye kelye-kelye.","The kite is a grey and brown bird. It is a meat-eater that eats lizards, grasshoppers and other lizards and insects.","Milvus migrans, Haliastur sphenurus",,27_Black_Kite_(adult_-_trill-whistle)).mp3,audio/mp3,1027167,16/4/16 6:45,,,,
+155,ilekaynewene,noun,Red-tailed Black Cockatoo,,TRUE,16/4/16 4:22,16/4/16 6:11,Red-tailed_Black_Cockatoo_Group_Above_03.jpg,image/jpeg,102608,16/4/16 4:37,red-tailed-black-cockatoo-K.mp3,audio/mp3,310542,16/4/16 4:37,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
-",,Arrkarrepe thangkerne pwelerrnge apenye. Thangkerne nyartepe anteyane arwele ilperrele. Arrkarrelepe aynenke wantakerrertetye kelye-kelye atnkwarengele aperrane.,"The barn owl looks like the southern boobook. It lives or nests in tree hollows. It eats animals and insects that come out at night including mice, grasshoppers and other small insects.",Tyto javanica,"",30_Eastern_Barn_Owl_(harsh_'psssh'_-_perched).mp3,audio/mp3,812963,2016-04-16 06:46:52,,,,
-132,tyelkather-athere,noun,dotterel,"",true,2016-04-16 04:21:33,2016-04-16 06:53:46,red-kneed-dotterel-tom-tarrant.jpg,image/jpeg,93682,2016-04-16 06:52:34,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,"Atye arenherre ilekaynewene rntere-rntere akake. Enye kwereyenge rtame, ilekepe. Ilekaynewene rtame re.","I saw a red-tailed black cockatoo, a male one (with red feathers). Prickles are its tucker. It's a prickle-eater.",Calyptorhynchus banksii,,38_Red-tailed_Black-Cockatoo_(adults_and_juveniles).mp3,audio/mp3,1221518,16/4/16 6:11,,,,
+156,ilere,noun,Curlew,,TRUE,16/4/16 4:22,16/4/16 6:10,waring-bush-stone-curlew-01.jpg,image/jpeg,332357,16/4/16 4:36,bush-stone-curlew-K.mp3,audio/mp3,330604,16/4/16 4:36,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations:
-- Red-kneed Dotterel, Black-fronted Dotterel
+- Bush Stone-curlew
 alternate_spellings: []
-",,"","","Erythrogonys cinctus, Elseyornis melanops",don't have call audio yet,,,,,,,,
-130,tyelkather-athere,noun,plover,"",true,2016-04-16 04:21:33,2016-04-16 06:55:13,banded-lapwing-julian-robinson.jpg,image/jpeg,112641,2016-04-16 05:12:27,banded-lapwing-K.mp3,audio/mp3,189752,2016-04-16 05:12:28,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-alternate_translations:
-- Banded Lapwing
-alternate_spellings: []
-",,"Tyelkatherathere wentare angkewene ape re, arlpankele arre aperrane.",The banded lapwing has a noisy call and is seen on the plains.,Vanellus tricolor,"",33_Banded_Lapwing_(alarm_call).mp3,audio/mp3,473371,2016-04-16 06:55:13,,,,
-129,kwayekwaye,noun,Australian Raven,"",false,2016-04-16 04:21:33,2016-04-16 05:13:12,,,,,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,"Ilerepe thangkerne arwengerrpe apenye. Repe aynenke perrkaltye, ayepayte kape wantakerrertetye. Ilere nyartepe thangkerne errpatye.","The curlew looks a bit like the bush turkey. It eats grasshoppers, grubs and other insects. This bird brings bad luck.",Burhinus grallarius,,22_Bush_Stone-curlew_(loud_wailing_-_night).mp3,audio/mp3,798335,16/4/16 6:10,,,,
+157,ilpertenye,noun,Wedge-tailed Eagle,,TRUE,16/4/16 4:22,16/4/16 6:08,ilpertenye_BG.jpg,image/jpeg,291599,16/4/16 4:35,wedge-tailed-eagle-K.mp3,audio/mp3,240325,16/4/16 4:35,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
-",,Kwayekwayepe thangkerne nganke apenye erlwe atherrepe errpwerle.,The Australian raven looks very similar to the crow but it has black eyes which the crow doesn't have.,Corvus coronoides,"",,,,,,,,
-128,kaperle-kaperle,noun,pipit,"",true,2016-04-16 04:21:33,2016-04-16 06:57:53,waring-Australasian_Pipit-02.jpg,image/jpeg,385233,2016-04-16 05:14:28,australasian-pipit-K.mp3,audio/mp3,151398,2016-04-16 05:14:30,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,"Ilpertenyepe thangkerne errpwerle alkenhe intetyeng-intetye arltere kape aherne apenye. Thangkerne nyartepe weye aynewene. Ilpertenyelepe weye kwereyenge alarrenke aherre, arinenge, kaperle, arlewatyerre kape thangkerne kelye-kelye.","The wedge-tailed eagle is a big black bird with little spots of white and brown. The eagle is a meat-eater which hunts and kills on its own. It eats kangaroos, euro, lizards, goannas and other small birds.",Aquila audax,,23_Wedge-tailed_Eagle_(calling_overhead).mp3,audio/mp3,1043886,16/4/16 6:08,,,,
+128,kaperle-kaperle,noun,Australasian Pipit,,TRUE,16/4/16 4:21,16/4/16 6:57,waring-Australasian_Pipit-02.jpg,image/jpeg,385233,16/4/16 5:14,australasian-pipit-K.mp3,audio/mp3,151398,16/4/16 5:14,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations:
 - Australasian Pipit
 alternate_spellings: []
-",,"Kaperl-kaperle thangkerne nyarte ware elpalhapenye repe athenge re arre artnperr-entweyane kwene. Kaperle-kaperlepe thangkerne kelye aherne apenye, arnalke errpwerle. Thangkerne nyartelepe aynenke perrkaltye kape wantakerrertetye kelye-kelye.",The Australian pipit is a grey bird that runs in and out through the grass. This bird is brown and has a black chest. It eats grasshoppers and other little insects.,Anthus novaeseelandiae,"",32_Australasian_Pipit_(bilbali)(repeated_'pip'_-_on_ground).mp3,audio/mp3,970743,2016-04-16 06:57:53,,,,
-127,rrpwere alkenhe,noun,magpie,"",true,2016-04-16 04:21:33,2016-04-16 06:58:47,waring-australian-magpie-01.jpg,image/jpeg,151707,2016-04-16 05:15:25,australian-magpie-K.mp3,audio/mp3,339381,2016-04-16 05:15:27,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,"Kaperl-kaperle thangkerne nyarte ware elpalhapenye repe athenge re arre artnperr-entweyane kwene. Kaperle-kaperlepe thangkerne kelye aherne apenye, arnalke errpwerle. Thangkerne nyartelepe aynenke perrkaltye kape wantakerrertetye kelye-kelye.",The Australian pipit is a grey bird that runs in and out through the grass. This bird is brown and has a black chest. It eats grasshoppers and other little insects.,Anthus novaeseelandiae,,32_Australasian_Pipit_(bilbali)(repeated_'pip'_-_on_ground).mp3,audio/mp3,970743,16/4/16 6:57,,,,
+158,karlatwerreye,noun,Red-capped Robin,,TRUE,16/4/16 4:22,16/4/16 6:06,Red-capped_Robin_2013_06_13_Frederick_Blakeley_memorial_02.jpg,image/jpeg,256527,16/4/16 4:32,red-capped-robin-K.mp3,audio/mp3,180653,16/4/16 4:52,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Karlartwerreye arenkerne wele artweye arenge enke kngwere angkwarre apewethe.,"If you see this bird you know to go the other way, because this bird is found near kurdaitchas.",Petroica goodenovii,,24_Red-capped_Robin_(AM_-_song).mp3,audio/mp3,857894,16/4/16 6:06,,,,
+138,karlayteng-aytenge,noun,Black-tailed Native Hen,,TRUE,16/4/16 4:21,16/4/16 6:41,Black-tailed_Native_Hen-waring.jpg,image/jpeg,333716,16/4/16 6:41,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations:
+- Black-tailed Native Hen
+alternate_spellings: []
+",,Thangkerne nharte arntwarenye. Awatnkakerre iterrtyele aynenye.,The black-tailed native hen is a waterbird. It was eaten in the olden days.,Gallinula ventralis,,96_Black-tailed_Native-hen_(group_calls).mp3,audio/mp3,533975,16/4/16 6:41,,,,
+144,karnawilkere,noun,Cockatiel,,TRUE,16/4/16 4:21,16/4/16 6:26,cockatiel-craig-nieminski.jpg,image/jpeg,231117,16/4/16 6:25,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Karnawilkere elpaye arenye. Nharte anteyane arwelele. Atnwenthepe kwere ayneyayne arrwekelenyele ilperewe alarreyayne karnawilkwere.,"The cockatiel lives at the creek. It stays in trees. In the early days people ate the cockatiel, killing them in hollow trees.",Nymphicus hollandicus,No call for this bird yet MC 15/APR/2016,,,,,,,,
+159,kelelkelelke,noun,Galah,,TRUE,16/4/16 4:22,15/8/16 0:28,waring-Galahs 2012_08_13 01.jpg,image/jpeg,196020,16/4/16 4:29,galah-K.mp3,audio/mp3,169367,16/4/16 4:34,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Kelelkelelkepe thangkerne ware elpalhapenye kape rntere-rntere. Thangkerne nyartelepe aynenke nterrenge athe arenye kape arwele arenye. Thangkerne nyartepe anteyane arwele ilperele, kape nyartepe weye ahene aynewethe.","The galah is a grey and pink bird. It eats seed from grass, plants and trees and nests in tree hollows. It is good to eat.",Cacatua roseicapilla,,40_Galah_(several_calling).mp3,audio/mp3,980147,16/4/16 5:19,,,,
+140,kerrkerlantye,noun,Brown Falcon,,TRUE,16/4/16 4:21,16/4/16 6:30,waring-brown-falcon-01.jpg,image/jpeg,243292,16/4/16 4:54,brown-falcon-K.mp3,audio/mp3,200619,16/4/16 4:54,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Kerrkerlantyepe thangkerne weye aynewene, repe aynenke kaperle, perrkaltye, ayepayte kape wantakerrertetye kelye-kelye. Thangkerne nyartepe iterrtye kape ake errpwerle arnalke arltere.","This bird is a meat-eater that eats lizards, grasshoppers, caterpillars and other insects. It has a black head and body with a white chest.",Falco berigora,,5_Brown_Falcon_(calling_near_nest).mp3,audio/mp3,805649,16/4/16 6:30,,,,
+149,kwarlpatelk-alyelkelye,noun,Striated Pardalote,,TRUE,16/4/16 4:21,16/4/16 6:18,waring-striated-pardalote-01.jpg,image/jpeg,219992,16/4/16 4:43,striated-pardalote-K.mp3,audio/mp3,150882,16/4/16 4:43,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,,,Pardalotus striatus,,39_Striated_Pardalote_(uropygialis)(song).mp3,audio/mp3,528751,16/4/16 6:18,,,,
+129,kwayekwaye,noun,Australian Raven,,FALSE,16/4/16 4:21,16/4/16 5:13,,,,,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Kwayekwayepe thangkerne nganke apenye erlwe atherrepe errpwerle.,The Australian raven looks very similar to the crow but it has black eyes which the crow doesn't have.,Corvus coronoides,,,,,,,,,
+146,kwepalepale,noun,Crested Bellbird,,TRUE,16/4/16 4:21,16/4/16 6:21,waring-crested-bellbird-01.jpg,image/jpeg,460512,16/4/16 4:48,crested-bellbird-K.mp3,audio/mp3,149722,16/4/16 4:48,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Kwepalepalepe thangkerne aherne apenye rlterre rntere-rntere. Thangkerne nyartepe ahene aynewethe. Thangkerne nyartelepe aynenke perrkaltye, ayepayte kape wantakerrertetye kelye-kelye.","The bellbird is a brown bird with a black chest. This bird eats grasshoppers, caterpillars and other little insects.",Oreoica gutturalis,,2_Crested_Bellbird_(pallescens)(AM_-_song).mp3,audio/mp3,1253910,16/4/16 6:21,,,,
+160,kwerlekweke,noun,Diamond Dove,,TRUE,16/4/16 4:22,16/4/16 5:19,Diamond_Dove_01.jpg,image/jpeg,174019,16/4/16 4:25,diamond-dove-K.mp3,audio/mp3,198529,16/4/16 4:34,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Thangkerne kwerlekwekele ngkenge ntyerrelewepe arntwarle tywengerlenke angkere.,This bird the diamond dove can show you the way to water when you are thirsty.,Geopelia cuneata,,13_Diamond_Dove_('coo-cooo-o-my-papa'_-_advertising).mp3,audio/mp3,1062694,16/4/16 5:19,,,,
+164,kwerte-kwerte,noun,Spotted Nightjar,,TRUE,15/8/16 0:51,15/8/16 0:51,spotted-nightjar-patrick-coin.jpg,image/jpeg,86120,15/8/16 0:51,spotted-nightjar-K.mp3,audio/mp3,150976,15/8/16 0:51,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Kwerte-kwerte nyartepe thangkerne errpwerle kape arne apenye intetyeng-intetye. Thangkerne nyartepe arlpankele arwelele anteyane kape athenge tyampe. Thangkerne nyartelepe aynenke perrkaltye, ayepayte kape nterrenge. Atnkwarengele angkenke 'kwerte-kwerte, kwerte-kwerte, kwerte-kwerte'.","The nightjar is a black bird with brown spots. This bird lives on the plains or under trees and grass. It eats grasshoppers, caterpillars and seeds. At night it calls ""kwerte-kwerte, kwerte-kwerte, kwerte-kwerte"".",Eurostopodus argus,,25_Spotted_Nightjar_(advertising_call_-_AM).mp3,audio/mp3,1011494,15/8/16 0:51,,,,
+143,lkwarrer-arrpwernenhe,noun,Channel-billed Cuckoo,,TRUE,16/4/16 4:21,16/4/16 6:27,channel-billed-cuckoo-aviceda-01.JPG,image/jpeg,209177,16/4/16 4:51,channel-billed-cuckoo-K.mp3,audio/mp3,352023,16/4/16 4:51,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Thangkerne lkwarrer-arrpwernenhe elpathenke kwere ahelaytnenkarle wele aynanthe etelarenke arntwe alkenhe rtame re aperninenke.,When the channel-billed cuckoo is heard calling we know that it will bring big rains.,Scythrops novaehollandiae,,6_Channel-billed_Cuckoo_('awk'_calls_-_two_birds_perched).mp3,audio/mp3,856849,16/4/16 6:27,,,,
+165,nganke,noun,Torresian Crow,,TRUE,15/8/16 0:55,15/8/16 0:55,waring-torresian-crow-01.jpg,image/jpeg,206599,15/8/16 0:54,torresian-crow-K.mp3,audio/mp3,172234,15/8/16 0:55,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations:
+- Torresian Crow, Little Crow
+alternate_spellings: []
+",,"Ngankelepe aynenke weye, rlwene kape wantakerrertetye kwetyengele. Nganke nyartepe anteyane errwele ntyarlkwe kwereyengelke.","The crow eats just about every food scrap and little things it can find. This bird lives in a nest which is made from twigs, sticks and leaves.","Corvus orru, Corvus bennetti",,14_Torresian_Crow_(variation_of_'urgh').mp3,audio/mp3,736686,15/8/16 0:55,,,,
+166,ngimarre,noun,Zebra Finch,,TRUE,15/8/16 0:57,15/8/16 0:57,waring-zebra-finch-01.jpg,image/jpeg,214382,15/8/16 0:57,zebra-finch-K.mp3,audio/mp3,189752,15/8/16 0:57,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Ngimarrepe thangkerne kelye arlkenye kape intetyeng-intetye. Ngimarrelepe aynenke nterrenge kape arntwe kwathenke. Ahepertewepe ngimarrepe arenke makwerle arntwe warle karrarrenke ngewarlengarle ngentye arle. Thangkerne nyartepe ntyarlkwele anteyane, arwelele.",The zebra finch is a little bird which has spots and stripes. It eats seeds and drinks water. In the summer months you can see the zebra finch in flocks of hundreds gathering to one waterhole. This bird lives in a nest high up in trees which it makes out of grass.,Taeniopygia guttata,,15_Zebra_Finch_(flock_near_waterhole).mp3,audio/mp3,705339,15/8/16 0:57,,,,
+125,ngimarre alarrewene,noun,Australian Hobby,,TRUE,16/4/16 4:21,16/4/16 5:18,waring-australian-hobby-02.jpg,image/jpeg,246978,16/4/16 5:17,australian-hobby-K.mp3,audio/mp3,265821,16/4/16 5:17,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Thangkerne ngimarre alarrewenele ngimarre alarrenke. Thangkerne aperte kwerarle aytnelp-aytnterrantye, ilelp-ilenke re aynewethe tyampelke re.",The Australian hobby kills zebra finches. It only eats birds. It spears them with its beak and grabs them with its claws.,Falco longipennis,,34_Australian_Hobby_(AM_-_calling_at_nest).mp3,audio/mp3,884016,16/4/16 5:18,,,,
+147,pelkere,noun,Crested Pigeon,,TRUE,16/4/16 4:21,15/8/16 0:58,waring-crested-pigeon-01.jpg,image/jpeg,243561,16/4/16 4:47,crested-pigeon-K.mp3,audio/mp3,329350,16/4/16 4:47,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Pelkerepe thangkerne ahene aynewethe. Thangkerne nyartelepe aynenke nterrenge athe arenye kape arwele arenye. Pelkere nyartepe ware elpalhapenye, rlterre rntere-rntere kape arrkaylpe akake akenge arlenge.",The crested pigeon is good to eat. This bird eats seeds from grass and plants. It is a grey bird with red legs and has a crest on its head.,Ocyphaps lophotes,,28_Crested_Pigeon_(courtship_-_'k-wooh'_repeated).mp3,audio/mp3,797290,16/4/16 6:20,,,,
+167,pwelerrnge,noun,Southern Boobook,,TRUE,15/8/16 1:01,15/8/16 1:01,southern-boobook-julian-robinson.jpg,image/jpeg,134397,15/8/16 1:01,southern-boobook-K.mp3,audio/mp3,245848,15/8/16 1:01,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Pwelerrngepe thangkerne ware elpalhapenye, rlwe atherrepe alkenhe. Thangkerne nyartepe atnkwarengele aperrane. Pwelerrngelepe aynenke ilkwennge, kape wantakekerretetye kelye-kelye atnkwarenge, aperrane.",The southern boobook owl is a grey bird with big eyes; it hunts for food at night. This bird eats mice and other little animals and insects that come out at night.,Ninox novaeseelandiae,,16_Southern_Boobook_(two_birds_calling).mp3,audio/mp3,861029,15/8/16 1:01,,,,
+127,rrpwere alkenhe,noun,Magpie,,TRUE,16/4/16 4:21,16/4/16 6:58,waring-australian-magpie-01.jpg,image/jpeg,151707,16/4/16 5:15,australian-magpie-K.mp3,audio/mp3,339381,16/4/16 5:15,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations:
 - Australian Magpie
 alternate_spellings: []
-",,"","",Gymnorhina tibicen,"",7_Australian_Magpie_(terraereginae)(song___alarm).mp3,audio/mp3,848490,2016-04-16 06:58:47,,,,
-126,eleterre-kame-kame,noun,Australian Kestrel,"",false,2016-04-16 04:21:33,2016-04-16 05:16:09,,,,,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,,,Gymnorhina tibicen,,7_Australian_Magpie_(terraereginae)(song___alarm).mp3,audio/mp3,848490,16/4/16 6:58,,,,
+168,rtwere,noun,Red-backed Kingfisher,,TRUE,15/8/16 1:03,15/8/16 1:03,rtwere_BG.JPG,image/jpeg,1918048,15/8/16 1:03,red-backed-kingfisher-K.mp3,audio/mp3,240325,15/8/16 1:03,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
-",,Thangkerne eleterrekamekamele errwelarle etnherrantye alkerele. Ertntweyane re apwelhe apenye.,The Australian kestrel hovers high in the sky. It dances like women during initiation ceremonies,Falco cenchroides,"",,,,,,,,
-125,ngimarre alarrewene,noun,Australian Hobby,"",true,2016-04-16 04:21:33,2016-04-16 05:18:15,waring-australian-hobby-02.jpg,image/jpeg,246978,2016-04-16 05:17:08,australian-hobby-K.mp3,audio/mp3,265821,2016-04-16 05:17:12,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+",,Rtwere angkenke awennngarre angenke ketye.,When the kingfisher sings it's telling you to dig a grave.,Todiramphus pyrrhopygius,,17_Red-backed_Kingfisher_('keeurp'_-_advertising_call).mp3,audio/mp3,1106580,15/8/16 1:03,,,,
+172,test,,,,FALSE,23/3/17 7:24,23/3/17 7:24,blue-tongue.gif,image/gif,222041,23/3/17 7:24,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 alternate_translations: []
 alternate_spellings: []
-",,"Thangkerne ngimarre alarrewenele ngimarre alarrenke. Thangkerne aperte kwerarle aytnelp-aytnterrantye, ilelp-ilenke re aynewethe tyampelke re.",The Australian hobby kills zebra finches. It only eats birds. It spears them with its beak and grabs them with its claws.,Falco longipennis,"",34_Australian_Hobby_(AM_-_calling_at_nest).mp3,audio/mp3,884016,2016-04-16 05:18:15,,,,
+",,,,,,,,,,,,,
+169,therre-therre,noun,Willie Wagtail,,TRUE,15/8/16 1:06,15/8/16 1:06,WillWagtailYudumuMile301207003BG.JPG,image/jpeg,1920405,15/8/16 1:06,willie-wagtail-K.mp3,audio/mp3,224952,15/8/16 1:06,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Therre-therre nyartepe thangkerne kelye errpwerle kwenenge arnalke angkwerrepe arltere. Thangkerne nyartelepe aynenke wantakerrertetye kelye-kelye. Thangkerne nyartepe ntyarlkwele anteyane.,The willie wagtail is a little black bird with white under its chest. This bird eats grasshoppers and other little insects. Its home is a (hanging) nest up high in the branches.,Rhipidura leucophrys,,18_Willie_Wagtail_(leucophrys)(song___chitter).mp3,audio/mp3,1080457,15/8/16 1:06,,,,
+135,twetime,noun,Black-breasted Buzzard,,TRUE,16/4/16 4:21,16/4/16 6:44,waring-black-breasted-buzzard-01.jpg,image/jpeg,252405,16/4/16 5:03,black-breasted-buzzard-K.mp3,audio/mp3,243251,16/4/16 5:03,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,"Twetime rartepe errwelenge aperrane, wele arenke rtame kwere iterrtyelepe, 'twetime nharte errwele fly-arrerrane, repe arrere apeke nthepelarte aperrane' mpele. Antenge theye rtame, atnhelengkwepe.",When we see the black-breasted buzzard flying high in the sky we know that emus are close behind.,Hamirostra melanosternon,,8_Black-breasted_Buzzard_(AM_-_perched_with_nest_nearby).mp3,audio/mp3,572637,16/4/16 6:44,,,,
+132,tyelkather-athere,noun,dotterel,,FALSE,16/4/16 4:21,16/4/16 6:53,red-kneed-dotterel-tom-tarrant.jpg,image/jpeg,93682,16/4/16 6:52,,,,,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations:
+- Red-kneed Dotterel, Black-fronted Dotterel
+alternate_spellings: []
+",,,,"Erythrogonys cinctus, Elseyornis melanops",don't have call audio yet,,,,,,,,
+130,tyelkather-athere,noun,plover,,TRUE,16/4/16 4:21,16/4/16 6:55,banded-lapwing-julian-robinson.jpg,image/jpeg,112641,16/4/16 5:12,banded-lapwing-K.mp3,audio/mp3,189752,16/4/16 5:12,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations:
+- Banded Lapwing
+alternate_spellings: []
+",,"Tyelkatherathere wentare angkewene ape re, arlpankele arre aperrane.",The banded lapwing has a noisy call and is seen on the plains.,Vanellus tricolor,,33_Banded_Lapwing_(alarm_call).mp3,audio/mp3,473371,16/4/16 6:55,,,,
+162,tyengaytey-ayteye,noun,Pallid Cuckoo,,TRUE,15/8/16 0:36,15/8/16 0:36,Pallid_Cuckoo_2013_06_13_Frederick_Blakeley_memorial_01.jpg,image/jpeg,285379,15/8/16 0:36,pallid-cuckoo-K.mp3,audio/mp3,305945,15/8/16 0:36,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Ilalthewe aherlaynterane tyengayteyayteyele. Tyengayteyayteye errelewe aharlaynterane. Lwematnewethe atherrkenyele.,The pallid cuckoo tells you when march flies are around. The pallid cuckoo hollers that all the grasses will be green.,Cacomantis pallidus,,26_Pallid_Cuckoo_(AM_-_advertising_call).mp3,audio/mp3,1064784,15/8/16 0:36,,,,
+170,tyewaketye,noun,Grey-crowned Babbler,,TRUE,15/8/16 1:08,15/8/16 1:08,grey-crowned-babbler-julian-robinson.jpg,image/jpeg,76064,15/8/16 1:08,grey-crowned-babbler-K.mp3,audio/mp3,245430,15/8/16 1:08,"--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+alternate_translations: []
+alternate_spellings: []
+",,Tyewaketye nyartepe thangkerne artetyele arre anenke. Thangkerne nyartepe errpwerle kape arltere. Tyewaketyelepe aynenke wantakerrertetye kelye-kelye.,This is a black and white bird which lives and can be found in the mulga country. This bird eats little insects that lives in mulga area.,Pomatostomus temporalis,,3_Grey-crowned_Babbler_(rubeculus)(group_at_nest).mp3,audio/mp3,586220,15/8/16 1:08,,,,
