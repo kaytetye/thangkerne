@@ -40,21 +40,37 @@
             <div id="menu" class="tabs">
                 <p class="home-link"><a href="../">Home</a></p>
                 <p class="about-link"><a href="../about.html">About</a></p>
-                {% for category in menu %}
-                    <div class="tab">
-                        <input type="checkbox" id="check_{{ category.name }}">
-                        <label class="tab-label" for="check_{{ category.name }}">{{ category.name }}</label>
-                        {% for entry in category.entries %}
-                            <div class="tab-content {{ entry.id}} {{ entry.menu_slug }}">
-                                <a href="{{ entry.slug }}">
-                                    <div class="thumbnail"
-                                         style="background-image: url(../images/{{ entry.image_file_name }})"></div>
-                                    {{ entry.text }}
-                                </a>
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% endfor %}
+
+
+{#                {% for category in menu %}#}
+{#                    <div class="tab">#}
+{#                        <input type="checkbox" id="check_{{ category.name }}">#}
+{#                        <label class="tab-label" for="check_{{ category.name }}">{{ category.name }}</label>#}
+{#                        {% for entry in category.entries %}#}
+{#                            <div class="tab-content {{ entry.id}} {{ entry.menu_slug }}">#}
+{#                                <a href="{{ entry.slug }}">#}
+{#                                    <div class="thumbnail"#}
+{#                                         style="background-image: url(../images/{{ entry.image_file_name }})"></div>#}
+{#                                    {{ entry.text }}#}
+{#                                </a>#}
+{#                            </div>#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{#                {% endfor %}#}
+
+                <div class="tab">
+                    {% for entry in menu %}
+                        <div class="tab-content {{ entry.id}} {{ entry.menu_slug }}">
+                            <a href="{{ entry.slug }}">
+                                <div class="thumbnail"
+                                     style="background-image: url(../images/{{ entry.image_file_name }})"></div>
+                                {{ entry.text }}
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+
+
             </div>
         </span>
     </nav>

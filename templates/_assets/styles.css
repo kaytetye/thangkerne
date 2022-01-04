@@ -78,7 +78,7 @@ img.feature {
 .tab-content {
     padding: 0.4em;
     margin: 0.4em 0;
-    border-radius: 1em;
+    border-radius: 1.8em;
 }
 
 .tab-content a {
@@ -114,6 +114,10 @@ img.feature {
 .tab-content a {
     font-family: "PT Sans";
     font-weight: bold;
+}
+.home-link,
+.about-link {
+    margin-left: 3.4em;
 }
 
 /* Hide the checkboxes */
@@ -173,7 +177,7 @@ img.feature {
         transition: all 0.35s;
     }
     .tab-content {
-        max-height: 0;
+        /*max-height: 0;*/
         padding: 0 1em;
     }
 

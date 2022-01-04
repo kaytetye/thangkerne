@@ -9,7 +9,7 @@ import shutil
 from helpers import slugify, reset_path, custom_sort
 
 
-def get_categories():
+def get_categories() -> Dict:
     #  Get all the categories
     print("==== Getting categories")
     categories = {}
@@ -22,7 +22,7 @@ def get_categories():
     return categories
 
 
-def get_categories_entries():
+def get_categories_entries() -> Dict:
     # Read all category-entry pairs as a list, also flip the col order
     print("==== Getting category entries")
     categories_entries = {}
@@ -39,7 +39,7 @@ def get_categories_entries():
     return categories_entries
 
 
-def get_entries():
+def get_entries() -> Dict:
     # Get all the entries and add entry ids to the category list
     print("==== Getting entries")
     entries = {}
@@ -143,9 +143,7 @@ def copy_about_page(project_output_path: Path):
     shutil.copy("../templates/about.html", project_output_path)
 
 
-def build_menu_highlight_css(entries: Dict,
-                             project_output_path: Path):
-    print(entries)
+def build_menu_highlight_css(entries: Dict, project_output_path: Path):
     with open("../templates/menu_highlight.css") as template_file:
         tm = Template(template_file.read())
         html = tm.render(entries=entries)
@@ -153,20 +151,7 @@ def build_menu_highlight_css(entries: Dict,
             css_output_file.write(html)
 
 
-
-def main():
-    project_output_path = Path("../output")
-
-    categories_output_path = Path("../output/categories")
-    reset_path(categories_output_path)
-
-    entries_output_path = Path("../output/entries")
-    reset_path(entries_output_path)
-
-    categories = get_categories()
-    categories_entries = get_categories_entries()
-    entries = get_entries()
-
+def build_menu_with_categories(categories: Dict, categories_entries: Dict, entries: Dict) -> List[Dict]:
     menu = []
     for index, category in categories.items():
         if category["id"] in categories_entries:
@@ -184,6 +169,38 @@ def main():
                     })
             custom_sort(sub_menu["entries"], "text")
             menu.append(sub_menu)
+    return menu
+
+
+def build_flat_menu(entries: Dict) -> List[Dict]:
+    menu = []
+    for key, entry in entries.items():
+        print(entry)
+        menu.append({
+            "id": entry["id"],
+            "text": entry["word"],
+            "slug": f'{entry["word"]}.html',
+            "image_file_name": entry["image_file_name"],
+            "menu_slug": entry["menu_slug"]
+        })
+    custom_sort(menu, "text")
+    return menu
+
+
+def main():
+    project_output_path = Path("../output")
+
+    categories_output_path = Path("../output/categories")
+    reset_path(categories_output_path)
+
+    entries_output_path = Path("../output/entries")
+    reset_path(entries_output_path)
+
+    categories = get_categories()
+    categories_entries = get_categories_entries()
+    entries = get_entries()
+
+    menu = build_flat_menu(entries)
 
     copy_about_page(project_output_path=project_output_path)
 
