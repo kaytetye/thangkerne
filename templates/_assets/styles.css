@@ -63,7 +63,8 @@ img.feature {
 }
 
 .translation,
-.scientific_name {
+.scientific_name,
+.sentence_translation {
     color: #555c8b;
 }
 
@@ -112,7 +113,7 @@ img.feature {
 .home-link a,
 .about-link a,
 .tab-content a {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: bold;
 }
 .home-link,

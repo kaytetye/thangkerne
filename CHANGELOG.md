@@ -1,5 +1,8 @@
 # Major changes
 
+## [0.1.1] - 2022-01-05
+### CHANGED
+- A few more typos from Myf
 
 ## [0.1.1] - 2022-01-04
 
